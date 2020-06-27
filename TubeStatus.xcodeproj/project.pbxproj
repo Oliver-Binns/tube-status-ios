@@ -337,7 +337,8 @@
 			children = (
 				7C1873C924A3A508009CCECC /* StatusService.swift */,
 			);
-			path = Services;
+			name = Services;
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
