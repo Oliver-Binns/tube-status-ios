@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7C18741024A3A858009CCECC"
-               BuildableName = "HomescreenExtension.appex"
-               BlueprintName = "HomescreenExtension"
+               BuildableName = "iOS-Widget.appex"
+               BlueprintName = "iOS-Widget"
                ReferencedContainer = "container:TubeStatus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -30,8 +30,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7C18738E24A3A45E009CCECC"
-               BuildableName = "TubeStatus.app"
-               BlueprintName = "TubeStatus"
+               BuildableName = "iOS.app"
+               BlueprintName = "iOS"
                ReferencedContainer = "container:TubeStatus.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -73,8 +73,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C18741024A3A858009CCECC"
-            BuildableName = "HomescreenExtension.appex"
-            BlueprintName = "HomescreenExtension"
+            BuildableName = "iOS-Widget.appex"
+            BlueprintName = "iOS-Widget"
             ReferencedContainer = "container:TubeStatus.xcodeproj">
          </BuildableReference>
       </RemoteRunnable>
@@ -82,8 +82,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C18738E24A3A45E009CCECC"
-            BuildableName = "TubeStatus.app"
-            BlueprintName = "TubeStatus"
+            BuildableName = "iOS.app"
+            BlueprintName = "iOS"
             ReferencedContainer = "container:TubeStatus.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -117,8 +117,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7C18738E24A3A45E009CCECC"
-            BuildableName = "TubeStatus.app"
-            BlueprintName = "TubeStatus"
+            BuildableName = "iOS.app"
+            BlueprintName = "iOS"
             ReferencedContainer = "container:TubeStatus.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

@@ -6,23 +6,54 @@
 	<dict>
 		<key>iOS.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>4</integer>
 		</dict>
 		<key>macOS.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
 		<key>tvOS.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
 		<key>watchOS.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>07A7413624B45A75002089FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07A7414424B45AA8002089FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07A7415124B45AB8002089FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>07A7416D24B45AD5002089FD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
