@@ -14,11 +14,7 @@ struct TubeStatusApp: App {
 
     var body: some Scene {
         WindowGroup {
-            GeometryReader { metrics in
-                ScrollView(.vertical) {
-                    ContentView(updates: viewModel.status, displayReason: true, height: metrics.size.height)
-                }
-            }
+            ScrollableContentView(updates: viewModel.status)
         }
     }
 }

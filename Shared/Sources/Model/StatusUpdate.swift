@@ -7,14 +7,14 @@
 
 import Foundation
 
-struct StatusUpdate: Identifiable, Decodable {
+public struct StatusUpdate: Identifiable, Decodable {
     enum CodingKeys: String, CodingKey {
         case id
         case type = "statusSeverityDescription"
         case reason
     }
 
-    let id: Int
-    let type: Status
+    public let id: Int
+    public let type: Status
     let reason: String
 }

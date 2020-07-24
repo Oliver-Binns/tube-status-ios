@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Status {
+public extension Status {
     var iconName: String {
         switch self {
         case .goodService, .noIssues:

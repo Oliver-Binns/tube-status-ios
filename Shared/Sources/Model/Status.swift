@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Status: String, Decodable {
+public enum Status: String, Decodable {
     case specialService = "Special Service"
     case closed = "Closed"
     case suspended = "Suspended"

@@ -35,6 +35,8 @@
 	<true/>
 	<key>UILaunchScreen</key>
 	<dict/>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

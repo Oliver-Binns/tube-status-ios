@@ -38,22 +38,17 @@ struct SimpleEntry: TimelineEntry {
 
 struct AllLinesPlaceholderView: View {
     var body: some View {
-        GeometryReader { metrics in
-            ContentView(updates: Line.allCases.map { line in
-                LineStatusUpdate(line: line)
-            }, height: metrics.size.height)
-        }
+        StaticContentView(updates: Line.allCases.map { line in
+            LineStatusUpdate(line: line)
+        })
     }
 }
 
 struct AllLinesWidget: Widget {
     public var body: some WidgetConfiguration {
         StaticConfiguration(kind: "All Lines",
-                            provider: AllLinesProvider(),
-                            placeholder: AllLinesPlaceholderView()) { entry in
-            GeometryReader { metrics in
-                ContentView(updates: entry.updates, height: metrics.size.height)
-            }
+                            provider: AllLinesProvider()) { entry in
+            StaticContentView(updates: entry.updates)
         }
         .configurationDisplayName("Tube Status")
         .description("See the status board for all London Underground lines")

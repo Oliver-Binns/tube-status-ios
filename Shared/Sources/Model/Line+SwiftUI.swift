@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Line {
+public extension Line {
     var color: Color {
         switch self {
         case .bakerloo:

@@ -72,8 +72,7 @@ struct SingleLineWidget: Widget {
     public var body: some WidgetConfiguration {
         IntentConfiguration(kind: "Single Line",
                             intent: LineSelectionIntent.self,
-                            provider: SingleLineProvider(),
-                            placeholder: SingleLinePlaceholderView()) { entry in
+                            provider: SingleLineProvider()) { entry in
             ZStack {
                 if let update = entry.updates.first {
                     SingleLineStatusView(update: update)

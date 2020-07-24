@@ -7,6 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		076CCB3724BA0CA500770D9D /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB3624BA0CA500770D9D /* StatusViewModel.swift */; };
+		076CCB3824BA0CA500770D9D /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB3624BA0CA500770D9D /* StatusViewModel.swift */; };
+		076CCB3924BA0CA500770D9D /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB3624BA0CA500770D9D /* StatusViewModel.swift */; };
+		076CCB3A24BA0CA500770D9D /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB3624BA0CA500770D9D /* StatusViewModel.swift */; };
+		076CCB4424BA17DF00770D9D /* StaticContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4324BA17DF00770D9D /* StaticContentView.swift */; };
+		076CCB4524BA17DF00770D9D /* StaticContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4324BA17DF00770D9D /* StaticContentView.swift */; };
+		076CCB4624BA17DF00770D9D /* StaticContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4324BA17DF00770D9D /* StaticContentView.swift */; };
+		076CCB4724BA17DF00770D9D /* StaticContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4324BA17DF00770D9D /* StaticContentView.swift */; };
+		076CCB4924BA186900770D9D /* ScrollableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4824BA186800770D9D /* ScrollableContentView.swift */; };
+		076CCB4A24BA186900770D9D /* ScrollableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4824BA186800770D9D /* ScrollableContentView.swift */; };
+		076CCB4B24BA186900770D9D /* ScrollableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4824BA186800770D9D /* ScrollableContentView.swift */; };
+		076CCB4C24BA186900770D9D /* ScrollableContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4824BA186800770D9D /* ScrollableContentView.swift */; };
+		076CCB4E24BA299E00770D9D /* AdaptiveStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4D24BA299E00770D9D /* AdaptiveStack.swift */; };
+		076CCB4F24BA299E00770D9D /* AdaptiveStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4D24BA299E00770D9D /* AdaptiveStack.swift */; };
+		076CCB5024BA299E00770D9D /* AdaptiveStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4D24BA299E00770D9D /* AdaptiveStack.swift */; };
+		076CCB5124BA299E00770D9D /* AdaptiveStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB4D24BA299E00770D9D /* AdaptiveStack.swift */; };
+		076CCB5324BA337300770D9D /* LineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB5224BA337300770D9D /* LineStatusView.swift */; };
+		076CCB5424BA337300770D9D /* LineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB5224BA337300770D9D /* LineStatusView.swift */; };
+		076CCB5524BA337300770D9D /* LineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB5224BA337300770D9D /* LineStatusView.swift */; };
+		076CCB5624BA337300770D9D /* LineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 076CCB5224BA337300770D9D /* LineStatusView.swift */; };
 		07A7413C24B45A75002089FD /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A7413A24B45A75002089FD /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07A7417924B45C51002089FD /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A7413A24B45A75002089FD /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		07A7417A24B45C52002089FD /* Shared.h in Headers */ = {isa = PBXBuildFile; fileRef = 07A7413A24B45A75002089FD /* Shared.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -16,10 +36,6 @@
 		07A7419424B45E83002089FD /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418224B45E83002089FD /* StatusView.swift */; };
 		07A7419524B45E83002089FD /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418224B45E83002089FD /* StatusView.swift */; };
 		07A7419624B45E83002089FD /* SingleLineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418324B45E83002089FD /* SingleLineStatusView.swift */; };
-		07A7419A24B45E83002089FD /* LineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418424B45E83002089FD /* LineStatusView.swift */; };
-		07A7419B24B45E83002089FD /* LineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418424B45E83002089FD /* LineStatusView.swift */; };
-		07A7419C24B45E83002089FD /* LineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418424B45E83002089FD /* LineStatusView.swift */; };
-		07A7419D24B45E83002089FD /* LineStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418424B45E83002089FD /* LineStatusView.swift */; };
 		07A7419E24B45E83002089FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418524B45E83002089FD /* ContentView.swift */; };
 		07A7419F24B45E83002089FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418524B45E83002089FD /* ContentView.swift */; };
 		07A741A024B45E83002089FD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A7418524B45E83002089FD /* ContentView.swift */; };
@@ -64,6 +80,11 @@
 
 /* Begin PBXFileReference section */
 		076BC46E24B4615E0006AADB /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		076CCB3624BA0CA500770D9D /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		076CCB4324BA17DF00770D9D /* StaticContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticContentView.swift; sourceTree = "<group>"; };
+		076CCB4824BA186800770D9D /* ScrollableContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableContentView.swift; sourceTree = "<group>"; };
+		076CCB4D24BA299E00770D9D /* AdaptiveStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveStack.swift; sourceTree = "<group>"; };
+		076CCB5224BA337300770D9D /* LineStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineStatusView.swift; sourceTree = "<group>"; };
 		07A7413724B45A75002089FD /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A7413A24B45A75002089FD /* Shared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shared.h; sourceTree = "<group>"; };
 		07A7413B24B45A75002089FD /* Info-iOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
@@ -75,7 +96,6 @@
 		07A7417124B45AD5002089FD /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		07A7418224B45E83002089FD /* StatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
 		07A7418324B45E83002089FD /* SingleLineStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleLineStatusView.swift; sourceTree = "<group>"; };
-		07A7418424B45E83002089FD /* LineStatusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineStatusView.swift; sourceTree = "<group>"; };
 		07A7418524B45E83002089FD /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		07A7418724B45E83002089FD /* Line+SwiftUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Line+SwiftUI.swift"; sourceTree = "<group>"; };
 		07A7418824B45E83002089FD /* StatusUpdate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusUpdate.swift; sourceTree = "<group>"; };
@@ -120,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		076CCB3524BA0C9600770D9D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				076CCB3624BA0CA500770D9D /* StatusViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		07A7412B24B45A44002089FD = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +175,7 @@
 				07A7418624B45E83002089FD /* Model */,
 				07A7418E24B45E83002089FD /* Networking */,
 				07A7418124B45E83002089FD /* Views */,
+				076CCB3524BA0C9600770D9D /* ViewModel */,
 				07A7417724B45B3F002089FD /* Supporting Files */,
 			);
 			path = Sources;
@@ -174,10 +203,13 @@
 		07A7418124B45E83002089FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				07A7418224B45E83002089FD /* StatusView.swift */,
-				07A7418324B45E83002089FD /* SingleLineStatusView.swift */,
-				07A7418424B45E83002089FD /* LineStatusView.swift */,
+				076CCB4324BA17DF00770D9D /* StaticContentView.swift */,
+				076CCB4824BA186800770D9D /* ScrollableContentView.swift */,
 				07A7418524B45E83002089FD /* ContentView.swift */,
+				07A7418224B45E83002089FD /* StatusView.swift */,
+				076CCB5224BA337300770D9D /* LineStatusView.swift */,
+				07A7418324B45E83002089FD /* SingleLineStatusView.swift */,
+				076CCB4D24BA299E00770D9D /* AdaptiveStack.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,7 +354,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					07A7413624B45A75002089FD = {
 						CreatedOnToolsVersion = 11.5;
@@ -395,19 +427,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076CCB5324BA337300770D9D /* LineStatusView.swift in Sources */,
 				07A741AE24B45E84002089FD /* LineStatusUpdate.swift in Sources */,
 				07A741A624B45E83002089FD /* StatusUpdate.swift in Sources */,
 				07A7419624B45E83002089FD /* SingleLineStatusView.swift in Sources */,
 				07A741BA24B45E84002089FD /* Status.swift in Sources */,
 				07A741AA24B45E84002089FD /* Status+SwiftUI.swift in Sources */,
+				076CCB4E24BA299E00770D9D /* AdaptiveStack.swift in Sources */,
+				076CCB4424BA17DF00770D9D /* StaticContentView.swift in Sources */,
 				07A741A224B45E83002089FD /* Line+SwiftUI.swift in Sources */,
-				07A7419A24B45E83002089FD /* LineStatusView.swift in Sources */,
 				07A7419E24B45E83002089FD /* ContentView.swift in Sources */,
+				076CCB3724BA0CA500770D9D /* StatusViewModel.swift in Sources */,
 				07A741C224B45E84002089FD /* StatusService.swift in Sources */,
 				07A7419224B45E83002089FD /* StatusView.swift in Sources */,
 				07A741B624B45E84002089FD /* Line.swift in Sources */,
 				07A741C624B45E84002089FD /* URLRequest+TFLStatus.swift in Sources */,
 				07A741BE24B45E84002089FD /* NetworkClient.swift in Sources */,
+				076CCB4924BA186900770D9D /* ScrollableContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,17 +451,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076CCB3824BA0CA500770D9D /* StatusViewModel.swift in Sources */,
 				07A741AF24B45E84002089FD /* LineStatusUpdate.swift in Sources */,
+				076CCB4F24BA299E00770D9D /* AdaptiveStack.swift in Sources */,
 				07A741A724B45E83002089FD /* StatusUpdate.swift in Sources */,
 				07A741BB24B45E84002089FD /* Status.swift in Sources */,
 				07A741AB24B45E84002089FD /* Status+SwiftUI.swift in Sources */,
+				076CCB5424BA337300770D9D /* LineStatusView.swift in Sources */,
 				07A741A324B45E83002089FD /* Line+SwiftUI.swift in Sources */,
-				07A7419B24B45E83002089FD /* LineStatusView.swift in Sources */,
+				076CCB4524BA17DF00770D9D /* StaticContentView.swift in Sources */,
 				07A7419F24B45E83002089FD /* ContentView.swift in Sources */,
 				07A741C324B45E84002089FD /* StatusService.swift in Sources */,
 				07A7419324B45E83002089FD /* StatusView.swift in Sources */,
 				07A741B724B45E84002089FD /* Line.swift in Sources */,
 				07A741C724B45E84002089FD /* URLRequest+TFLStatus.swift in Sources */,
+				076CCB4A24BA186900770D9D /* ScrollableContentView.swift in Sources */,
 				07A741BF24B45E84002089FD /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,17 +474,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076CCB3924BA0CA500770D9D /* StatusViewModel.swift in Sources */,
 				07A741B024B45E84002089FD /* LineStatusUpdate.swift in Sources */,
+				076CCB5024BA299E00770D9D /* AdaptiveStack.swift in Sources */,
 				07A741A824B45E83002089FD /* StatusUpdate.swift in Sources */,
 				07A741BC24B45E84002089FD /* Status.swift in Sources */,
 				07A741AC24B45E84002089FD /* Status+SwiftUI.swift in Sources */,
+				076CCB5524BA337300770D9D /* LineStatusView.swift in Sources */,
 				07A741A424B45E83002089FD /* Line+SwiftUI.swift in Sources */,
-				07A7419C24B45E83002089FD /* LineStatusView.swift in Sources */,
+				076CCB4624BA17DF00770D9D /* StaticContentView.swift in Sources */,
 				07A741A024B45E83002089FD /* ContentView.swift in Sources */,
 				07A741C424B45E84002089FD /* StatusService.swift in Sources */,
 				07A7419424B45E83002089FD /* StatusView.swift in Sources */,
 				07A741B824B45E84002089FD /* Line.swift in Sources */,
 				07A741C824B45E84002089FD /* URLRequest+TFLStatus.swift in Sources */,
+				076CCB4B24BA186900770D9D /* ScrollableContentView.swift in Sources */,
 				07A741C024B45E84002089FD /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,17 +497,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				076CCB3A24BA0CA500770D9D /* StatusViewModel.swift in Sources */,
 				07A741B124B45E84002089FD /* LineStatusUpdate.swift in Sources */,
+				076CCB5124BA299E00770D9D /* AdaptiveStack.swift in Sources */,
 				07A741A924B45E83002089FD /* StatusUpdate.swift in Sources */,
 				07A741BD24B45E84002089FD /* Status.swift in Sources */,
 				07A741AD24B45E84002089FD /* Status+SwiftUI.swift in Sources */,
+				076CCB5624BA337300770D9D /* LineStatusView.swift in Sources */,
 				07A741A524B45E83002089FD /* Line+SwiftUI.swift in Sources */,
-				07A7419D24B45E83002089FD /* LineStatusView.swift in Sources */,
+				076CCB4724BA17DF00770D9D /* StaticContentView.swift in Sources */,
 				07A741A124B45E83002089FD /* ContentView.swift in Sources */,
 				07A741C524B45E84002089FD /* StatusService.swift in Sources */,
 				07A7419524B45E83002089FD /* StatusView.swift in Sources */,
 				07A741B924B45E84002089FD /* Line.swift in Sources */,
 				07A741C924B45E84002089FD /* URLRequest+TFLStatus.swift in Sources */,
+				076CCB4C24BA186900770D9D /* ScrollableContentView.swift in Sources */,
 				07A741C124B45E84002089FD /* NetworkClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +522,34 @@
 		07A7413024B45A44002089FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 			};
 			name = Debug;
@@ -481,6 +557,32 @@
 		07A7413124B45A44002089FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				PRODUCT_NAME = "$(PROJECT_NAME)";
 			};
 			name = Release;
@@ -716,7 +818,7 @@
 				TARGETED_DEVICE_FAMILY = 4;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Debug;
 		};
@@ -791,7 +893,7 @@
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
 			};
 			name = Release;
 		};
@@ -869,7 +971,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 13.4;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -942,7 +1044,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 13.4;
+				TVOS_DEPLOYMENT_TARGET = 14.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

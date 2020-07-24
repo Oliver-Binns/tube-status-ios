@@ -20,6 +20,7 @@ struct StatusView: View {
                 .foregroundColor(status.type.color)
             Text(status.type.rawValue)
                 .font(.subheadline)
+            Spacer()
         }
         .padding(.vertical, 0)
         .padding(.leading, 8)
