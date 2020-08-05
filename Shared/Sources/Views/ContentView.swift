@@ -23,14 +23,17 @@ struct ContentView: View {
                     LineStatusView(update: update)
                         .padding(0)
                     if displayReason,
-                       let status = update.statuses.first {
-                        Text(status.reason.trimmingCharacters(in: .whitespacesAndNewlines))
+                       let reason = update.statuses.first?.reason {
+                        Text(reason.trimmingCharacters(in: .whitespacesAndNewlines))
                             .font(.body)
                             .lineLimit(nil)
                             .padding()
                             .fixedSize(horizontal: false, vertical: true)
                     }
                 }
+                .accessibility(addTraits: [.isStaticText])
+                .accessibility(removeTraits: [.isImage])
+                .accessibilityElement(children: .combine)
             }
         }
     }

@@ -16,5 +16,5 @@ public struct StatusUpdate: Identifiable, Decodable {
 
     public let id: Int
     public let type: Status
-    let reason: String
+    let reason: String?
 }

@@ -26,7 +26,8 @@ struct LineStatusView: View {
             } else {
                 Text("-")
             }
-        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+        }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
     }
 }
 struct LineStatusView_Previews: PreviewProvider {

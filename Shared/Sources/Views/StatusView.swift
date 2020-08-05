@@ -18,6 +18,7 @@ struct StatusView: View {
         HStack(spacing: 4) {
             Image(systemName: status.type.iconName)
                 .foregroundColor(status.type.color)
+                .accessibility(hidden: true)
             Text(status.type.rawValue)
                 .font(.subheadline)
             Spacer()
