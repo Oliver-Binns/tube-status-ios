@@ -44,8 +44,9 @@ public struct SingleLineStatusView: View {
                             .fontWeight(.semibold)
                             .fixedSize(horizontal: false, vertical: true)
                     }
-                    if family == .systemMedium {
-                        Text(status.reason)
+                    if family == .systemMedium,
+                       let reason = status.reason {
+                        Text(reason)
                             .foregroundColor(.white)
                             .font(.footnote)
                             .multilineTextAlignment(.center)
