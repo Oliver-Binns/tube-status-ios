@@ -15,6 +15,7 @@ struct LineStatusView: View {
                 .font(.subheadline)
                 .fontWeight(.medium)
                 .foregroundColor(.white)
+                .lineLimit(0)
                 .padding(.leading, 16)
                 .padding(.trailing, 8)
                 .padding(.vertical, 4)
@@ -22,6 +23,7 @@ struct LineStatusView: View {
                 .background(update.line.color)
             if let status = update.statuses.first {
                 StatusView(status: status)
+                    .lineLimit(0)
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
             } else {
                 Text("-")
