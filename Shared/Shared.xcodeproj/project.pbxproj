@@ -176,16 +176,8 @@
 				07A7418E24B45E83002089FD /* Networking */,
 				07A7418124B45E83002089FD /* Views */,
 				076CCB3524BA0C9600770D9D /* ViewModel */,
-				07A7417724B45B3F002089FD /* Supporting Files */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		07A7417724B45B3F002089FD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		07A7417824B45B45002089FD /* Application */ = {
