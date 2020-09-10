@@ -38,9 +38,15 @@ struct SingleLineProvider: IntentTimelineProvider {
         }
     }
 
-    public func snapshot(for configuration: LineSelectionIntent,
-                         with context: Context,
-                         completion: @escaping (SimpleEntry) -> ()) {
+    func placeholder(in context: Context) -> SimpleEntry {
+        SimpleEntry(date: Date(),
+                    line: .bakerloo,
+                    updates: [LineStatusUpdate(line: .bakerloo)])
+    }
+
+    public func getSnapshot(for configuration: LineSelectionIntent,
+                            in context: Context,
+                            completion: @escaping (SimpleEntry) -> ()) {
         let line = self.line(for: configuration)
         StatusService.getStatus(client: NetworkClient(), for: line) { updates in
             let entry = SimpleEntry(date: Date(), line: line, updates: updates)
@@ -48,9 +54,9 @@ struct SingleLineProvider: IntentTimelineProvider {
         }
     }
 
-    public func timeline(for configuration: LineSelectionIntent,
-                         with context: Context,
-                         completion: @escaping (Timeline<Entry>) -> ()) {
+    public func getTimeline(for configuration: LineSelectionIntent,
+                            in context: Context,
+                            completion: @escaping (Timeline<Entry>) -> ()) {
         let line = self.line(for: configuration)
         StatusService.getStatus(client: NetworkClient(), for: line) { updates in
             let entry = SimpleEntry(date: Date(), line: line, updates: updates)

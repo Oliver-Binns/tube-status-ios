@@ -11,15 +11,21 @@ import WidgetKit
 import SwiftUI
 
 struct AllLinesProvider: TimelineProvider {
-    public func snapshot(with context: Context, completion: @escaping (SimpleEntry) -> ()) {
+    func placeholder(in context: Context) -> SimpleEntry {
+        SimpleEntry(date: Date(), line: nil, updates: Line.allCases.map { line in
+            LineStatusUpdate(line: line)
+        })
+    }
+
+    public func getSnapshot(in context: Context,
+                            completion: @escaping (SimpleEntry) -> ()) {
         StatusService.getStatus(client: NetworkClient()) { updates in
-            let entry = SimpleEntry(date: Date(), line: nil, updates: updates)
-            completion(entry)
+            completion(placeholder(in: context))
         }
     }
 
-    public func timeline(with context: Context,
-                         completion: @escaping (Timeline<Entry>) -> ()) {
+    public func getTimeline(in context: Context,
+                            completion: @escaping (Timeline<Entry>) -> ()) {
         StatusService.getStatus(client: NetworkClient()) { updates in
             let entry = SimpleEntry(date: Date(), line: nil, updates: updates)
             // Refresh the data every two minutes:
@@ -35,15 +41,6 @@ struct SimpleEntry: TimelineEntry {
     let line: Line?
     let updates: [LineStatusUpdate]
 }
-
-struct AllLinesPlaceholderView: View {
-    var body: some View {
-        StaticContentView(updates: Line.allCases.map { line in
-            LineStatusUpdate(line: line)
-        })
-    }
-}
-
 struct AllLinesWidget: Widget {
     public var body: some WidgetConfiguration {
         StaticConfiguration(kind: "All Lines",
