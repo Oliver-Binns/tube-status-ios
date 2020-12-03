@@ -1,0 +1,15 @@
+{
+  "colors" : [
+    {
+      "color" : {
+        "platform" : "tvos",
+        "reference" : "systemRedColor"
+      },
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
