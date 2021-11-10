@@ -2,11 +2,11 @@
 //  ComplicationController.swift
 //  watchOS WatchKit Extension
 //
-//  Created by Laptop 3 on 07/07/2020.
+//  Created by Oliver Binns on 07/07/2020.
 //
 import ClockKit
-import Shared
-
+import UndergroundStatus
+import TFLAPI
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
     
@@ -47,7 +47,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
                                  withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
         guard let line = Line(rawValue: complication.identifier) else { handler(nil); return }
-        StatusService.getStatus(client: .init(), for: line) { [weak self] statuses in
+        StatusService().getStatus(for: line) { [weak self] statuses in
             guard let status = statuses.first,
                   let template = self?.getTemplateForLineStatusUpdate(status, matching: complication)
             else { handler(nil); return }

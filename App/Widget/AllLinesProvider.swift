@@ -4,11 +4,11 @@
 //
 //  Created by Oliver Binns on 24/06/2020.
 //
-
 import Foundation
-import Shared
-import WidgetKit
 import SwiftUI
+import TFLAPI
+import UndergroundStatus
+import WidgetKit
 
 struct AllLinesProvider: TimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -19,14 +19,14 @@ struct AllLinesProvider: TimelineProvider {
 
     public func getSnapshot(in context: Context,
                             completion: @escaping (SimpleEntry) -> ()) {
-        StatusService.getStatus(client: NetworkClient()) { updates in
+        StatusService().getStatus { updates in
             completion(placeholder(in: context))
         }
     }
 
     public func getTimeline(in context: Context,
                             completion: @escaping (Timeline<Entry>) -> ()) {
-        StatusService.getStatus(client: NetworkClient()) { updates in
+        StatusService().getStatus { updates in
             let entry = SimpleEntry(date: Date(), line: nil, updates: updates)
             // Refresh the data every two minutes:
             let expiryDate = Calendar.current.date(byAdding: .minute, value: 2, to: Date()) ?? Date()

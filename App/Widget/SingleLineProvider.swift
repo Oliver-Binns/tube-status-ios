@@ -4,11 +4,11 @@
 //
 //  Created by Oliver Binns on 25/06/2020.
 //
-
 import Foundation
-import Shared
-import WidgetKit
 import SwiftUI
+import TFLAPI
+import UndergroundStatus
+import WidgetKit
 
 struct SingleLineProvider: IntentTimelineProvider {
     typealias Intent = LineSelectionIntent
@@ -48,7 +48,7 @@ struct SingleLineProvider: IntentTimelineProvider {
                             in context: Context,
                             completion: @escaping (SimpleEntry) -> ()) {
         let line = self.line(for: configuration)
-        StatusService.getStatus(client: NetworkClient(), for: line) { updates in
+        StatusService().getStatus(for: line) { updates in
             let entry = SimpleEntry(date: Date(), line: line, updates: updates)
             completion(entry)
         }
@@ -58,7 +58,7 @@ struct SingleLineProvider: IntentTimelineProvider {
                             in context: Context,
                             completion: @escaping (Timeline<Entry>) -> ()) {
         let line = self.line(for: configuration)
-        StatusService.getStatus(client: NetworkClient(), for: line) { updates in
+        StatusService().getStatus(for: line) { updates in
             let entry = SimpleEntry(date: Date(), line: line, updates: updates)
             // Refresh the data every two minutes:
             let expiryDate = Calendar.current.date(byAdding: .minute, value: 2, to: Date()) ?? Date()
