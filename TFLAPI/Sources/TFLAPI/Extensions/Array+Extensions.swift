@@ -6,11 +6,13 @@
 //
 import Foundation
 
-extension Array where Element: Identifiable {
+extension Array where Element: Equatable {
     func removingDuplicates() -> [Element] {
-        reduce(into: [Element.ID: Element]()) { dictionary, element in
-            dictionary[element.id] = element
-        }.values.map { $0 as Element }
+        reduce(into: [Element]()) { array, element in
+            if !array.contains(element) {
+                array.append(element)
+            }
+        }
     }
 }
 

@@ -29,6 +29,12 @@ public struct Station: Decodable, Identifiable {
     }
 }
 
+extension Station: Equatable {
+    public static func ==(lhs: Station, rhs: Station) -> Bool {
+        lhs.id == rhs.id
+    }
+}
+
 private struct LineResult: Decodable {
     let name: String
 }
