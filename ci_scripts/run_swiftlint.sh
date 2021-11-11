@@ -1,4 +1,5 @@
 #!/bin/sh
+set -e
 
-brew install swiftlint
-swiftlint --strict tube-status-ios
+brew install swiftlint >/dev/null
+swiftlint --strict $CI_WORKSPACE
