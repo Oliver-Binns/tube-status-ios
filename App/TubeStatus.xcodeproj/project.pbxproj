@@ -800,7 +800,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.oliver-binns.tubestatus.homescreen";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliver-binns.tubestatus.beta.homescreen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
@@ -1012,7 +1012,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.oliver-binns.tubestatus.homescreen";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oliver-binns.tubestatus.alpha.homescreen";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
