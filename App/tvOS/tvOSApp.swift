@@ -8,7 +8,7 @@ import SwiftUI
 import UndergroundStatus
 
 @main
-struct tvOSApp: App {
+struct TVOSApp: App {
     @ObservedObject private var viewModel = StatusViewModel(client: .init())
 
     var body: some Scene {

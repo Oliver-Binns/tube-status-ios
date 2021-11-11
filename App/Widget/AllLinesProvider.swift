@@ -18,14 +18,14 @@ struct AllLinesProvider: TimelineProvider {
     }
 
     public func getSnapshot(in context: Context,
-                            completion: @escaping (SimpleEntry) -> ()) {
-        StatusService().getStatus { updates in
+                            completion: @escaping (SimpleEntry) -> Void) {
+        StatusService().getStatus { _ in
             completion(placeholder(in: context))
         }
     }
 
     public func getTimeline(in context: Context,
-                            completion: @escaping (Timeline<Entry>) -> ()) {
+                            completion: @escaping (Timeline<Entry>) -> Void) {
         StatusService().getStatus { updates in
             let entry = SimpleEntry(date: Date(), line: nil, updates: updates)
             // Refresh the data every two minutes:

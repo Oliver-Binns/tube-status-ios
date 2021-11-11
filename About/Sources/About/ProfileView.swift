@@ -32,6 +32,7 @@ struct ProfileView: View {
                         }
                     }
                     Text(
+                        // swiftlint:disable line_length
                         """
                         Oliver is an experienced software engineer who mainly focusses on native iOS development in Swift. He has worked on a number of mobile apps, across a range of sectors including travel, healthcare and productivity, for both the general consumer and enterprise markets. Oliver was awarded a scholarship to attend Apple's Worldwide Developer Conference in both 2015 & 16.
 

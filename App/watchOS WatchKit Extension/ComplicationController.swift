@@ -8,8 +8,8 @@ import ClockKit
 import UndergroundStatus
 import TFLAPI
 
-class ComplicationController: NSObject, CLKComplicationDataSource {
-    
+final class ComplicationController: NSObject, CLKComplicationDataSource {
+
     // MARK: - Complication Configuration
 
     func getComplicationDescriptors(handler: @escaping ([CLKComplicationDescriptor]) -> Void) {
@@ -17,24 +17,26 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             .map { $0.rawValue }
             .map {
                 CLKComplicationDescriptor(identifier: $0,
-                                          displayName: "\($0) Status", supportedFamilies: CLKComplicationFamily.allCases)
+                                          displayName: "\($0) Status",
+                                          supportedFamilies: CLKComplicationFamily.allCases)
             }
         // Call the handler with the currently supported complication descriptors
         handler(descriptors)
     }
-    
+
     func handleSharedComplicationDescriptors(_ complicationDescriptors: [CLKComplicationDescriptor]) {
         // Do any necessary work to support these newly shared complication descriptors
     }
 
     // MARK: - Timeline Configuration
-    
+
     func getTimelineEndDate(for complication: CLKComplication,
                             withHandler handler: @escaping (Date?) -> Void) {
-        // Call the handler with the last entry date you can currently provide or nil if you can't support future timelines
+        // Call the handler with the last entry date you can currently provide
+        // or nil if you can't support future timelines
         handler(nil)
     }
-    
+
     func getPrivacyBehavior(for complication: CLKComplication,
                             withHandler handler: @escaping (CLKComplicationPrivacyBehavior) -> Void) {
         // Call the handler with your desired behavior when the device is locked
@@ -42,7 +44,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
 
     // MARK: - Timeline Population
-    
+
     func getCurrentTimelineEntry(for complication: CLKComplication,
                                  withHandler handler: @escaping (CLKComplicationTimelineEntry?) -> Void) {
         // Call the handler with the current timeline entry
@@ -54,7 +56,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
             handler(CLKComplicationTimelineEntry(date: Date(), complicationTemplate: template))
         }
     }
-    
+
     func getTimelineEntries(for complication: CLKComplication, after date: Date, limit: Int,
                             withHandler handler: @escaping ([CLKComplicationTimelineEntry]?) -> Void) {
         // Call the handler with the timeline entries after the given date
@@ -62,7 +64,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     }
 
     // MARK: - Sample Templates
-    
+
     func getLocalizableSampleTemplate(for complication: CLKComplication,
                                       withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
@@ -84,9 +86,11 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         let template: CLKComplicationTemplate?
         switch complication.family {
         case .modularSmall:
-            template = CLKComplicationTemplateModularSmallStackImage(line1ImageProvider: imageProvider, line2TextProvider: header)
+            template = CLKComplicationTemplateModularSmallStackImage(line1ImageProvider: imageProvider,
+                                                                     line2TextProvider: header)
         case .modularLarge:
-            template = CLKComplicationTemplateModularLargeStandardBody(headerTextProvider: header, body1TextProvider: body)
+            template = CLKComplicationTemplateModularLargeStandardBody(headerTextProvider:
+                                                                        header, body1TextProvider: body)
         case .utilitarianSmall:
             template = CLKComplicationTemplateUtilitarianSmallFlat(textProvider: body)
         case .utilitarianSmallFlat:
@@ -98,16 +102,21 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
         case .extraLarge:
             template = CLKComplicationTemplateExtraLargeStackText(line1TextProvider: header, line2TextProvider: body)
         case .graphicCorner:
-            template = CLKComplicationTemplateGraphicCornerTextImage(textProvider: body, imageProvider: fullColorImageProvider)
+            template = CLKComplicationTemplateGraphicCornerTextImage(textProvider: body,
+                                                                     imageProvider: fullColorImageProvider)
         case .graphicBezel:
-            let circular = CLKComplicationTemplateGraphicCircularStackImage(line1ImageProvider: fullColorImageProvider, line2TextProvider: header)
+            let circular = CLKComplicationTemplateGraphicCircularStackImage(line1ImageProvider: fullColorImageProvider,
+                                                                            line2TextProvider: header)
             template = CLKComplicationTemplateGraphicBezelCircularText(circularTemplate: circular, textProvider: body)
         case .graphicCircular:
-            template = CLKComplicationTemplateGraphicCircularStackImage(line1ImageProvider: fullColorImageProvider, line2TextProvider: header)
+            template = CLKComplicationTemplateGraphicCircularStackImage(line1ImageProvider: fullColorImageProvider,
+                                                                        line2TextProvider: header)
         case .graphicRectangular:
-            template = CLKComplicationTemplateGraphicRectangularStandardBody(headerTextProvider: header, body1TextProvider: body)
+            template = CLKComplicationTemplateGraphicRectangularStandardBody(headerTextProvider: header,
+                                                                             body1TextProvider: body)
         case .graphicExtraLarge:
-            template = CLKComplicationTemplateGraphicExtraLargeCircularStackImage(line1ImageProvider: fullColorImageProvider, line2TextProvider: body)
+            template = CLKComplicationTemplateGraphicExtraLargeCircularStackImage(line1ImageProvider: fullColorImageProvider,
+                                                                                  line2TextProvider: body)
         @unknown default:
             template = nil
         }

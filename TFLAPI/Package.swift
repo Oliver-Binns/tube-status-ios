@@ -12,10 +12,10 @@ let package = Package(
         .tvOS(.v14)
     ],
     products: [
-        .library(name: "TFLAPI", targets: ["TFLAPI"]),
+        .library(name: "TFLAPI", targets: ["TFLAPI"])
     ],
     targets: [
         .target(name: "TFLAPI", dependencies: []),
-        .testTarget(name: "TFLAPITests", dependencies: ["TFLAPI"]),
+        .testTarget(name: "TFLAPITests", dependencies: ["TFLAPI"])
     ]
 )

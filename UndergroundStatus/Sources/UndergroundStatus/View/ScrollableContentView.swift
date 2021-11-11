@@ -15,7 +15,7 @@ public struct ScrollableContentView: View {
     }
 
     public var body: some View {
-        GeometryReader { metrics in
+        GeometryReader { _ in
             ScrollView(.vertical) {
                 ContentView(updates: updates, displayReason: true)
             }

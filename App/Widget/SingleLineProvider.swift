@@ -46,7 +46,7 @@ struct SingleLineProvider: IntentTimelineProvider {
 
     public func getSnapshot(for configuration: LineSelectionIntent,
                             in context: Context,
-                            completion: @escaping (SimpleEntry) -> ()) {
+                            completion: @escaping (SimpleEntry) -> Void) {
         let line = self.line(for: configuration)
         StatusService().getStatus(for: line) { updates in
             let entry = SimpleEntry(date: Date(), line: line, updates: updates)
@@ -56,7 +56,7 @@ struct SingleLineProvider: IntentTimelineProvider {
 
     public func getTimeline(for configuration: LineSelectionIntent,
                             in context: Context,
-                            completion: @escaping (Timeline<Entry>) -> ()) {
+                            completion: @escaping (Timeline<Entry>) -> Void) {
         let line = self.line(for: configuration)
         StatusService().getStatus(for: line) { updates in
             let entry = SimpleEntry(date: Date(), line: line, updates: updates)
@@ -68,7 +68,7 @@ struct SingleLineProvider: IntentTimelineProvider {
     }
 }
 
-struct SingleLinePlaceholderView : View {
+struct SingleLinePlaceholderView: View {
     var body: some View {
         SingleLineStatusView(update: LineStatusUpdate(line: .bakerloo))
     }
