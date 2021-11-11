@@ -2,9 +2,21 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:App/TubeStatus.xcodeproj">
+      location = "group:About">
    </FileRef>
    <FileRef
-      location = "group:Shared/Shared.xcodeproj">
+      location = "group:BaseUI">
+   </FileRef>
+   <FileRef
+      location = "group:JourneyPlanner">
+   </FileRef>
+   <FileRef
+      location = "group:TFLAPI">
+   </FileRef>
+   <FileRef
+      location = "group:UndergroundStatus">
+   </FileRef>
+   <FileRef
+      location = "group:App/TubeStatus.xcodeproj">
    </FileRef>
 </Workspace>

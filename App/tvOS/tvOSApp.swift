@@ -2,10 +2,10 @@
 //  tvOSApp.swift
 //  tvOS
 //
-//  Created by Laptop 3 on 07/07/2020.
+//  Created by Oliver Binns on 07/07/2020.
 //
-import Shared
 import SwiftUI
+import UndergroundStatus
 
 @main
 struct tvOSApp: App {

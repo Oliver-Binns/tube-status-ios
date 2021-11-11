@@ -2,10 +2,10 @@
 //  macOSApp.swift
 //  macOS
 //
-//  Created by Laptop 3 on 10/07/2020.
+//  Created by Oliver Binns on 10/07/2020.
 //
-import Shared
 import SwiftUI
+import UndergroundStatus
 
 @main
 struct macOSApp: App {
