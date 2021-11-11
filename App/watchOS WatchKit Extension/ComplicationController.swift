@@ -8,6 +8,9 @@ import ClockKit
 import UndergroundStatus
 import TFLAPI
 
+// swiftlint:disable cyclomatic_complexity
+// swiftlint:disable line_length
+// swiftlint:disable function_body_length
 final class ComplicationController: NSObject, CLKComplicationDataSource {
 
     // MARK: - Complication Configuration
