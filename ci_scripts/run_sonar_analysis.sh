@@ -12,6 +12,6 @@ fastlane run sonar \
   sonar_login:$SONAR_TOKEN \
   sonar_url:"https://sonarcloud.io" \
   pull_request_branch:$CI_PULL_REQUEST_SOURCE_BRANCH \
-  pull_request_base:"main" \
+  pull_request_base:$CI_PULL_REQUEST_TARGET_COMMIT \
   pull_request_key:$CI_PULL_REQUEST_NUMBER
 

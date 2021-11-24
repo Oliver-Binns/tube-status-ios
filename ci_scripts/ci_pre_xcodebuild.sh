@@ -3,8 +3,10 @@ set -e
 
 if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
 then
-    ./run_swiftlint.sh
-    ./run_sonar_analysis.sh
+    if which swiftlint >/dev/null; then
+        ./run_swiftlint.sh
+        ./run_sonar_analysis.sh
+    fi
 elif [ "$CI_WORKFLOW" = "Alpha Release" ]
 then
     fastlane run badge alpha:true path:$CI_WORKSPACE
