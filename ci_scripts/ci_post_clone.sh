@@ -6,5 +6,8 @@ then
   git checkout -b temp
   git branch -d develop
   git fetch origin develop
+  git checkout develop
+  git checkout temp
+
   ./install_dependencies.sh
 fi
