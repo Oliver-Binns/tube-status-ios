@@ -1,4 +1,5 @@
 #!/bin/sh
 set -e
 
-cat $CI_RESULT_BUNDLE_PATH
+echo "result bundle"
+ls $CI_RESULT_BUNDLE_PATH
