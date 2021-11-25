@@ -1,5 +1,7 @@
 #!/bin/sh
 set -e
 
-echo "result bundle"
-ls $CI_RESULT_BUNDLE_PATH
+if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
+then
+  ./run_sonar_analysis.sh
+fi
