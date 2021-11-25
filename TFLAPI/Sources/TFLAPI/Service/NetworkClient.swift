@@ -19,7 +19,7 @@ public final class NetworkClient {
     }
 
     func executeRequest(request: URLRequest, completion: @escaping (Result<Data, Error>) -> Void) {
-        session.dataTask(with: request) { (data, response, error) in
+        session.dataTask(with: request) { (data, _, error) in
             if let error = error {
                 completion(.failure(error))
                 return

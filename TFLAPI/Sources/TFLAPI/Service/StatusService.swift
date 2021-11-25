@@ -14,7 +14,7 @@ public struct StatusService {
     }
 
     public func getStatus(for line: Line,
-                                 completion: (([LineStatusUpdate]) -> Void)? = nil) {
+                          completion: (([LineStatusUpdate]) -> Void)? = nil) {
         runStatusRequest(.statusForLine(line), completion: completion)
     }
 

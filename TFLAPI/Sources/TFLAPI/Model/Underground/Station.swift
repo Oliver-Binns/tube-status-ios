@@ -30,7 +30,7 @@ public struct Station: Decodable, Identifiable {
 }
 
 extension Station: Equatable {
-    public static func ==(lhs: Station, rhs: Station) -> Bool {
+    public static func == (lhs: Station, rhs: Station) -> Bool {
         lhs.id == rhs.id
     }
 }

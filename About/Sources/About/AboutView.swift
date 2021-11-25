@@ -13,7 +13,7 @@ public struct AboutView: View {
     public var body: some View {
         VStack(spacing: 16) {
             ProfileView()
-            AdaptiveStack(spacing: 16){
+            AdaptiveStack(spacing: 16) {
                 Link(destination: .twitter) {
                     Card(backgroundColor: Color("Twitter")) {
                         Text("Twitter")

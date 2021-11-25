@@ -12,13 +12,13 @@ let package = Package(
         .tvOS(.v14)
     ],
     products: [
-        .library(name: "JourneyPlanner", targets: ["JourneyPlanner"]),
+        .library(name: "JourneyPlanner", targets: ["JourneyPlanner"])
     ],
     dependencies: [
         .package(name: "TFLAPI", path: "../TFLAPI")
     ],
     targets: [
         .target(name: "JourneyPlanner", dependencies: ["TFLAPI"]),
-        .testTarget(name: "JourneyPlannerTests", dependencies: ["JourneyPlanner"]),
+        .testTarget(name: "JourneyPlannerTests", dependencies: ["JourneyPlanner"])
     ]
 )

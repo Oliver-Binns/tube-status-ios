@@ -8,5 +8,5 @@ import XCTest
 @testable import BaseUI
 
 final class ColorTests: XCTestCase {
-    
+
 }

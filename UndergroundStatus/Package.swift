@@ -12,7 +12,7 @@ let package = Package(
         .tvOS(.v14)
     ],
     products: [
-        .library(name: "UndergroundStatus", targets: ["UndergroundStatus"]),
+        .library(name: "UndergroundStatus", targets: ["UndergroundStatus"])
     ],
     dependencies: [
         .package(name: "BaseUI", path: "../BaseUI"),
@@ -20,6 +20,6 @@ let package = Package(
     ],
     targets: [
         .target(name: "UndergroundStatus", dependencies: ["BaseUI", "TFLAPI"]),
-        .testTarget(name: "UndergroundStatusTests", dependencies: ["UndergroundStatus"]),
+        .testTarget(name: "UndergroundStatusTests", dependencies: ["UndergroundStatus"])
     ]
 )
