@@ -12,7 +12,7 @@ then
     "+refs/heads/$CI_PULL_REQUEST_SOURCE_BRANCH:refs/remotes/origin/$CI_PULL_REQUEST_SOURCE_BRANCH"
   git -C $CI_WORKSPACE config remote.origin.fetch \
     "+refs/heads/$CI_PULL_REQUEST_TARGET_BRANCH:refs/remotes/origin/$CI_PULL_REQUEST_TARGET_BRANCH"
-  git -C $CI_WORKSPACE fetch --unshallow
+  git -C $CI_WORKSPACE fetch
 fi
 
 ./install_dependencies.sh
