@@ -3,8 +3,7 @@ set -e
 
 if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
 then
-  git -C $CI_WORKSPACE remote
-  git -C $CI_WORKSPACE branch
+  git -C $CI_WORKSPACE branch -r
   git -C $CI_WORKSPACE branch temp
   git -C $CI_WORKSPACE reset --hard origin/develop
   git -C $CI_WORKSPACE checkout temp
