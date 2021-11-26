@@ -4,7 +4,7 @@ set -e
 if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
 then
   if which swiftlint >/dev/null; then
-    ./run_swiftlint.sh
+    (cd $CI_WORKSPACE && ./run_swiftlint.sh)
   fi
 elif [ "$CI_WORKFLOW" = "Alpha Release" ]
 then

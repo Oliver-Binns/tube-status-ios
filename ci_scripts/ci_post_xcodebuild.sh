@@ -3,5 +3,5 @@ set -e
 
 if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
 then
-  ./run_sonar_analysis.sh
+  (cd $CI_WORKSPACE && ./run_sonar_analysis.sh)
 fi

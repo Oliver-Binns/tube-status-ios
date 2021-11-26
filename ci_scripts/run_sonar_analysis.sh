@@ -1,7 +1,6 @@
 #!/bin/sh
 set -e
 
-cd $CI_WORKSPACE
 fastlane sonar_analysis \
   result_path:$CI_RESULT_BUNDLE_PATH \
   workspace:$CI_WORKSPACE \
