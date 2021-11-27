@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+./install_dependencies.sh
+
 if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
 then
   if which swiftlint >/dev/null; then
