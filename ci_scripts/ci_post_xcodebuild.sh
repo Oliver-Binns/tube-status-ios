@@ -9,6 +9,7 @@ then
     -scheme "iOS Production" \
     -destination 'platform=iOS Simulator,name=iPhone 13' \
     -enableCodeCoverage YES \
+    -resultBundlePath $CI_RESULT_BUNDLE_PATH \
     test-without-building
   (./run_sonar_analysis.sh)
 fi
