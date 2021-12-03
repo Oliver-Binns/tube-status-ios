@@ -12,7 +12,7 @@ platform :ios do
       project_name: "tube-status-ios",
       project_version: "1.0",
       project_language: "swift",
-      exclusions: "vendor",
+      exclusions: "vendor/**",
       sonar_runner_args: "-Dsonar.projectBaseDir=#{options[:workspace]} -Dsonar.c.file.suffixes=- -Dsonar.cpp.file.suffixes=- -Dsonar.objc.file.suffixes=- -Dsonar.pullrequest.provider=github -Dsonar.junit.report_paths=#{options[:workspace]}/test_output",
       sources_path: options[:workspace],
       sonar_organization: "oliver-binns",

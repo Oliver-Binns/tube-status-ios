@@ -26,9 +26,9 @@ final class JourneyServiceTests: XCTestCase {
         sut.planJourney(from: Station(id: "123", name: "Holborn", lines: [.central]),
                         to: Station(id: "456", name: "South Woodford", lines: [.central]))
             .sink { error in
-
+                print(error)
             } receiveValue: { stations in
-
+                print(stations)
             }
             .store(in: &cancellables)
 
