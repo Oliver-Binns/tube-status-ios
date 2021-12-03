@@ -8,7 +8,7 @@ then
     -workspace TubeStatus.xcworkspace \
     -scheme "iOS Production" \
     -destination 'platform=iOS Simulator,name=iPhone 12' \
-    -enable-test-coverage YES \
+    -enableCodeCoverage YES \
     test-without-building
   (./run_sonar_analysis.sh)
 fi
