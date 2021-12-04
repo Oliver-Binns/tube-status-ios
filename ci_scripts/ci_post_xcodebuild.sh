@@ -3,7 +3,8 @@ set -e
 
 if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
 then
-  # run in a subshell as this script changes the directory
+  rm -rf $CI_RESULT_BUNDLE_PATH
+
   xcodebuild \
     -workspace "$CI_WORKSPACE/$CI_XCODE_PROJECT" \
     -scheme "iOS Production" \
@@ -11,5 +12,7 @@ then
     -enableCodeCoverage YES \
     -resultBundlePath $CI_RESULT_BUNDLE_PATH \
     test-without-building
+
+  # run in a subshell as this script changes the directory
   (./run_sonar_analysis.sh)
 fi
