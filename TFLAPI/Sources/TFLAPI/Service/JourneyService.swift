@@ -16,7 +16,7 @@ public struct JourneyService {
 
     public func planJourney(from origin: Station, to destination: Station) -> AnyPublisher<[Station], Error> {
         client
-            .executeRequest(request: .planJourney(from: origin.id, to: origin.id))
+            .executeRequest(request: .planJourney(from: origin.id, to: destination.id))
             .decode(type: [Station].self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
