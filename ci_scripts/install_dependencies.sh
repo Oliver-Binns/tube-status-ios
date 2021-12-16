@@ -10,8 +10,8 @@ then
   (cd $CI_WORKSPACE && fastlane add_plugin xcresult_to_junit)
 elif [ "$CI_WORKFLOW" = "Alpha Release" ];
 then
-  fastlane add_plugin badge
+  (cd $CI_WORKSPACE && fastlane add_plugin badge)
 elif [ "$CI_WORKFLOW" = "Beta Release" ];
 then
-  fastlane add_plugin badge
+  (cd $CI_WORKSPACE && fastlane add_plugin badge)
 fi
