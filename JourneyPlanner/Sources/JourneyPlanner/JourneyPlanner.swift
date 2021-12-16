@@ -32,24 +32,12 @@ public struct JourneyPlanner: View {
             if let stations = stations {
                 Form {
                     Section {
-                        VStack(alignment: .leading, spacing: 0) {
-                            Text("Origin").font(.caption2).fontWeight(.semibold)
-                            Picker("From", selection: $originID) {
-                                Text("Select Station").tag(nil as String?)
-                                ForEach(stations) {
-                                    Text($0.name).tag($0.id as String?)
-                                }.frame(maxWidth: .infinity)
-                            }
-                        }
-                        VStack(alignment: .leading, spacing: 0) {
-                            Text("Destination").font(.caption2).fontWeight(.semibold)
-                            Picker("To", selection: $destinationID) {
-                                Text("Select Station").tag(nil as String?)
-                                ForEach(stations) {
-                                    Text($0.name).tag($0.id as String?)
-                                }.frame(maxWidth: .infinity)
-                            }
-                        }
+                        StationPicker(title: "Origin",
+                                      stations: stations,
+                                      id: $originID)
+                        StationPicker(title: "Destination",
+                                      stations: stations,
+                                      id: $destinationID)
                         Button {
                             fetchJourney()
                         } label: {
