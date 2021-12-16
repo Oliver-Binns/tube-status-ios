@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
+if [ "$CI_WORKFLOW" = "Pull Request Validation" ];
 then
   if which fastlane >/dev/null; then
     rm -rf $CI_RESULT_BUNDLE_PATH

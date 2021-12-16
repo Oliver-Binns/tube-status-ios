@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-if [ "$CI_WORKFLOW" = "Pull Request Validation" ]
+if [ "$CI_WORKFLOW" = "Pull Request Validation" ];
 then
   # fetch a reference to the develop branch on GitHub
   # this will allow SonarQube analysis to work
