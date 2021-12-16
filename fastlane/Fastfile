@@ -1,0 +1,31 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Exports Test Coverage and Code Quality Analysis to SonarCloud"
+  lane :sonar_analysis do |options|
+    Dir.chdir("..") do
+      sh(
+        "#{options[:workspace]}/xccov-to-sonarqube-generic.sh #{options[:result_path]} > #{options[:workspace]}/sonarqube-generic-coverage.xml"
+      )
+    end
+    xcresult_to_junit(
+      xcresult_path: options[:result_path],
+      output_path: "#{options[:workspace]}/test_output"
+    )
+    sonar(
+      project_key: "tube-status-ios",
+      project_name: "tube-status-ios",
+      project_version: "1.0",
+      project_language: "swift",
+      exclusions: "vendor/**,**/Tests/**,**/Package.swift",
+      sonar_runner_args: "-Dsonar.projectBaseDir=#{options[:workspace]} -Dsonar.c.file.suffixes=- -Dsonar.cpp.file.suffixes=- -Dsonar.objc.file.suffixes=- -Dsonar.pullrequest.provider=github -Dsonar.junit.report_paths=#{options[:workspace]}/test_output -Dsonar.coverageReportPaths=#{options[:workspace]}/sonarqube-generic-coverage.xml",
+      sources_path: options[:workspace],
+      sonar_organization: "oliver-binns",
+      sonar_login: options[:sonar_token],
+      sonar_url: "https://sonarcloud.io",
+      pull_request_branch: options[:source_branch],
+      pull_request_base: options[:target_branch],
+      pull_request_key: options[:pr_number] 
+    )
+  end
+end

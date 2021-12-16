@@ -27,6 +27,12 @@ public struct Station: Decodable, Identifiable {
             .compactMap(Line.init)
 
     }
+
+    init(id: String, name: String, lines: [Line]) {
+        self.id = id
+        self.name = name
+        self.lines = lines
+    }
 }
 
 extension Station: Equatable {
