@@ -28,4 +28,16 @@ platform :ios do
       pull_request_key: options[:pr_number] 
     )
   end
+
+  lane :badge_alpha do
+    Dir.chdir("..") do
+      add_badge(alpha: true)
+    end
+  end
+
+  lane :badge_beta do
+    Dir.chdir("..") do
+      add_badge(dark: true)
+    end
+  end
 end

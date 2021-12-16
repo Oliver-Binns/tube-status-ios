@@ -8,8 +8,8 @@ then
   fi
 elif [ "$CI_WORKFLOW" = "Alpha Release" ];
 then
-  (cd $CI_WORKSPACE && fastlane run badge alpha:true path:$CI_WORKSPACE)
+  (cd $CI_WORKSPACE && fastlane badge_alpha)
 elif [ "$CI_WORKFLOW" = "Beta Release" ];
 then
-  (cd $CI_WORKSPACE && fastlane run badge dark:true path:$CI_WORKSPACE)
+  (cd $CI_WORKSPACE && fastlane badge_beta)
 fi

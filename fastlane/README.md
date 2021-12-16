@@ -21,6 +21,16 @@ or alternatively using `brew install fastlane`
 fastlane ios sonar_analysis
 ```
 Exports Test Coverage and Code Quality Analysis to SonarCloud
+### ios badge_alpha
+```
+fastlane ios badge_alpha
+```
+
+### ios badge_beta
+```
+fastlane ios badge_beta
+```
+
 
 ----
 
