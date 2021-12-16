@@ -27,6 +27,23 @@ struct JourneyView: View {
                 Text(string(date: journey.arrivalDate)).fontWeight(.semibold)
             }
             Text("Duration: \(journey.duration)")
+
+            Text(journey.legs.first!.origin)
+            ForEach(journey.legs) { leg in
+                HStack {
+                    HStack {
+                        Text("|").fontWeight(.black)
+                        switch leg.mode {
+                        case .walking:
+                            Image(systemName: "figure.walk")
+                        case .tube, .overground:
+                            Image(systemName: "tram.fill")
+                        }
+                    }.foregroundColor(leg.line?.color ?? .primary)
+                    Text("\(leg.duration) min")
+                }
+                Text(leg.destination)
+            }
         }
     }
 }

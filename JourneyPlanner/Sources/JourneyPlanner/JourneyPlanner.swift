@@ -59,6 +59,7 @@ public struct JourneyPlanner: View {
                 ProgressView()
             }
         }.onAppear {
+            guard stations == nil else { return }
             stationService.getAllStations()
                 .receive(on: DispatchQueue.main)
                 .sink(receiveCompletion: { error in
