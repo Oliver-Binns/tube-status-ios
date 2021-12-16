@@ -10,12 +10,16 @@ struct JourneyResponse: Decodable {
     let journeys: [Journey]
 }
 
-struct Journey: Decodable {
-    let departureDate: Date
-    let arrivalDate: Date
+public struct Journey: Decodable {
+    public let id = UUID()
+    public let departureDate: Date
+    public let arrivalDate: Date
+    public let duration: Int
 
     private enum CodingKeys: String, CodingKey {
         case departureDate = "startDateTime"
         case arrivalDate = "arrivalDateTime"
+        case duration
     }
 }
+extension Journey: Identifiable { }

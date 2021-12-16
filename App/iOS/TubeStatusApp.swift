@@ -24,9 +24,7 @@ struct TubeStatusApp: App {
                     Text("Status")
                 }
                 NavigationView {
-                    ScrollView {
-                        JourneyPlanner()
-                    }.navigationTitle("Journey Planner")
+                    JourneyPlanner().navigationTitle("Journey Planner")
                 }.tabItem {
                     Image(systemName: "arrow.triangle.turn.up.right.diamond.fill")
                     Text("Journey Planner")
