@@ -90,21 +90,3 @@ public struct JourneyPlanner: View {
             .store(in: &cancellables)
     }
 }
-
-struct StationView: View {
-    let station: Station
-
-    var body: some View {
-        HStack {
-            Text(station.name)
-            ForEach(station.lines) { line in
-                Image(uiImage: UIImage(systemName: "circle.fill")!
-                        .withTintColor(UIColor(line.color)))
-                //Image(systemName: "circle.fill")
-                //    .foregroundColor(line.color)
-                //    .background(line.color)
-            }
-            Spacer()
-        }.padding(4)
-    }
-}
