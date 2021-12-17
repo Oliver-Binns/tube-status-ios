@@ -10,8 +10,10 @@ then
   (cd $CI_WORKSPACE && fastlane add_plugin xcresult_to_junit)
 elif [ "$CI_WORKFLOW" = "Alpha Release" ];
 then
+  brew install imagemagick
   (cd $CI_WORKSPACE && fastlane add_plugin badge)
 elif [ "$CI_WORKFLOW" = "Beta Release" ];
 then
+  brew install imagemagick
   (cd $CI_WORKSPACE && fastlane add_plugin badge)
 fi
