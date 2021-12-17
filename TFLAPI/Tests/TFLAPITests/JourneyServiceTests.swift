@@ -23,8 +23,7 @@ final class JourneyServiceTests: XCTestCase {
     }
 
     func test_planJourney() {
-        sut.planJourney(from: Station(id: "123", name: "Holborn", lines: [.central]),
-                        to: Station(id: "456", name: "South Woodford", lines: [.central]))
+        sut.planJourney(from: "Holborn", to: "SouthWoodford")
             .sink { error in
                 print(error)
             } receiveValue: { stations in
