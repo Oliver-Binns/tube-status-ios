@@ -1,0 +1,1519 @@
+{
+    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.ItineraryResult, Tfl.Api.Presentation.Entities",
+    "journeys": [
+        {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
+            "startDateTime": "2022-01-07T08:57:00",
+            "duration": 57,
+            "arrivalDateTime": "2022-01-07T09:54:00",
+            "legs": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+                    "duration": 30,
+                    "instruction": {
+                        "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+                        "summary": "Northern line to Leicester Square",
+                        "detailed": "Northern line towards Kennington Station via Charing Cross",
+                        "steps": []
+                    },
+                    "obstacles": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+                            "type": "STAIRS",
+                            "incline": "DOWN",
+                            "stopId": 1000135,
+                            "position": "AFTER"
+                        },
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+                            "type": "STAIRS",
+                            "incline": "DOWN",
+                            "stopId": 1000135,
+                            "position": "AFTER"
+                        }
+                    ],
+                    "departureTime": "2022-01-07T08:57:00",
+                    "arrivalTime": "2022-01-07T09:27:00",
+                    "departurePoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLUEGW",
+                        "platformName": "",
+                        "icsCode": "1000070",
+                        "commonName": "Edgware Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.61354466997,
+                        "lon": -0.27501850604
+                    },
+                    "arrivalPoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLULSQ",
+                        "platformName": "",
+                        "icsCode": "1000135",
+                        "commonName": "Leicester Square Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.51197626578,
+                        "lon": -0.12835817403
+                    },
+                    "path": {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+                        "lineString": "[[51.61354481055, -0.27501834827],[51.612790815, -0.27328499893],[51.61240358358, -0.27263530592],[51.61201996064, -0.27223101921],[51.61110247884, -0.27160148635],[51.60835038605, -0.27034846828],[51.60702357695, -0.26940242962],[51.60602200252, -0.26855960123],[51.60452297085, -0.26691262149],[51.60381582414, -0.26591427192],[51.60319790094, -0.26486923105],[51.60284298093, -0.2641457334],[51.60284298093, -0.2641457334],[51.60264159804, -0.26373522723],[51.60031013655, -0.25810615558],[51.59936707518, -0.25575978994],[51.59880062579, -0.25455418501],[51.59815628619, -0.25355374005],[51.59773364399, -0.25294909402],[51.59553288445, -0.25003672048],[51.59553288445, -0.25003672048],[51.59528442144, -0.24970794062],[51.59409903489, -0.24800657797],[51.59208192321, -0.24480703379],[51.59143210471, -0.24344616739],[51.58982309455, -0.23868657615],[51.58945830505, -0.23774791005],[51.58703349849, -0.23257288105],[51.58550192777, -0.22939893253],[51.58503226931, -0.2286665912],[51.58415274405, -0.22758935273],[51.58325814825, -0.22644751245],[51.58325814825, -0.22644751245],[51.58275903418, -0.22581048085],[51.58196014837, -0.22471577357],[51.58132389222, -0.22367249607],[51.58004039835, -0.22145655898],[51.57928883208, -0.21992715954],[51.57834808896, -0.21778461076],[51.57766552141, -0.21606500627],[51.57671198997, -0.21367776944],[51.57667407, -0.21359339666],[51.57667407, -0.21359339666],[51.57390093982, -0.20742386103],[51.5734148863, -0.20621635183],[51.57324033204, -0.20538623143],[51.57313921201, -0.20465423984],[51.57310843767, -0.20381846263],[51.57317275883, -0.20273361116],[51.57335713975, -0.20126881359],[51.57357266629, -0.20007696261],[51.57363261361, -0.19929531885],[51.57360002973, -0.198344159],[51.57351728267, -0.19764031188],[51.57327865171, -0.19674060272],[51.57292141047, -0.1957301526],[51.57280868904, -0.19541713884],[51.57243934287, -0.19420515964],[51.57241160205, -0.19409155108],[51.57241160205, -0.19409155108],[51.57220900666, -0.19326186858],[51.57148062475, -0.18917809396],[51.57124735381, -0.18804737029],[51.57094061752, -0.18681856959],[51.57051162015, -0.18582553421],[51.56972655044, -0.18448595461],[51.56895536428, -0.18346331787],[51.5681228251, -0.18254416737],[51.56752276967, -0.18212079373],[51.56533459606, -0.18076522567],[51.56257527706, -0.17969229277],[51.56215267253, -0.17969474135],[51.55842738703, -0.18011758661],[51.55808499283, -0.18007354978],[51.55763140201, -0.17981756247],[51.55706616582, -0.17932079904],[51.55657979508, -0.17869106648],[51.55640462927, -0.17837574869],[51.55640462927, -0.17837574869],[51.55611724729, -0.17785843788],[51.55578837611, -0.17694835414],[51.55558867488, -0.17624949645],[51.55542245086, -0.17539062684],[51.55497720525, -0.17336007045],[51.5547700677, -0.17276251429],[51.55368895812, -0.17032477833],[51.55256624122, -0.1681051946],[51.55232560675, -0.16766770715],[51.55152551607, -0.16653150523],[51.55124084325, -0.1661535029],[51.55039490264, -0.16496150389],[51.5502980064, -0.16480906992],[51.5502980064, -0.16480906992],[51.55009988509, -0.16449739498],[51.54957230075, -0.16353783317],[51.54864608548, -0.16181550184],[51.54789177721, -0.16073533728],[51.54744866062, -0.16000322119],[51.54721653118, -0.1595366358],[51.54661966494, -0.15817615638],[51.54626164609, -0.15713777593],[51.54599129385, -0.15652853817],[51.54522613843, -0.15533358388],[51.54421510479, -0.15353193189],[51.54421510479, -0.15353193189],[51.5439678895, -0.15309141619],[51.54379010735, -0.15265154299],[51.54337562232, -0.1514569203],[51.54312538556, -0.15041429461],[51.54262886644, -0.14801164771],[51.5424395755, -0.14741364044],[51.54214016461, -0.14667590021],[51.54168638107, -0.14584349683],[51.54091190458, -0.14463478955],[51.54039839226, -0.14400674727],[51.53965906934, -0.14331580702],[51.53950401494, -0.14317791425],[51.53926336322, -0.14296665726],[51.53926336322, -0.14296665726],[51.53826380234, -0.14208921617],[51.53667774748, -0.14074069844],[51.53576377509, -0.13981185964],[51.53511566638, -0.13920384889],[51.53436925119, -0.13859814587],[51.53436925119, -0.13859814587],[51.53416825095, -0.13843504142],[51.53307848101, -0.13719627107],[51.53002289401, -0.13391850645],[51.52956920663, -0.13366313102],[51.52920905313, -0.1336346084],[51.5287622423, -0.13381146741],[51.52834399536, -0.13408807268],[51.52820254486, -0.13426599401],[51.52820254486, -0.13426599401],[51.5279649021, -0.13456490599],[51.52769410477, -0.1350661392],[51.5265974297, -0.13792212156],[51.52641351189, -0.13823236524],[51.52612129589, -0.13851819099],[51.52574614168, -0.13867765115],[51.52536641516, -0.13854897767],[51.5245383382, -0.13793404567],[51.52426385537, -0.13774979158],[51.52426385537, -0.13774979158],[51.52364758019, -0.1373361087],[51.52079011298, -0.13464188952],[51.52065256978, -0.1344894599],[51.52065256978, -0.1344894599],[51.52011272699, -0.13389120034],[51.51706141428, -0.13088824138],[51.51654389556, -0.13057792624],[51.51594500288, -0.1304186363],[51.51594500288, -0.1304186363],[51.51583949323, -0.13039057389],[51.51385717966, -0.12957818059],[51.51193068251, -0.12858536467]]",
+                        "stopPoints": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBTK",
+                                "name": "Burnt Oak Underground Station",
+                                "uri": "/StopPoint/940GZZLUBTK",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCND",
+                                "name": "Colindale Underground Station",
+                                "uri": "/StopPoint/940GZZLUCND",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHCL",
+                                "name": "Hendon Central Underground Station",
+                                "uri": "/StopPoint/940GZZLUHCL",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBTX",
+                                "name": "Brent Cross Underground Station",
+                                "uri": "/StopPoint/940GZZLUBTX",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGGN",
+                                "name": "Golders Green Underground Station",
+                                "uri": "/StopPoint/940GZZLUGGN",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHTD",
+                                "name": "Hampstead Underground Station",
+                                "uri": "/StopPoint/940GZZLUHTD",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBZP",
+                                "name": "Belsize Park Underground Station",
+                                "uri": "/StopPoint/940GZZLUBZP",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCFM",
+                                "name": "Chalk Farm Underground Station",
+                                "uri": "/StopPoint/940GZZLUCFM",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCTN",
+                                "name": "Camden Town Underground Station",
+                                "uri": "/StopPoint/940GZZLUCTN",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUMTC",
+                                "name": "Mornington Crescent Underground Station",
+                                "uri": "/StopPoint/940GZZLUMTC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUEUS",
+                                "name": "Euston Underground Station",
+                                "uri": "/StopPoint/940GZZLUEUS",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUWRR",
+                                "name": "Warren Street Underground Station",
+                                "uri": "/StopPoint/940GZZLUWRR",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGDG",
+                                "name": "Goodge Street Underground Station",
+                                "uri": "/StopPoint/940GZZLUGDG",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUTCR",
+                                "name": "Tottenham Court Road Underground Station",
+                                "uri": "/StopPoint/940GZZLUTCR",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLULSQ",
+                                "name": "Leicester Square Underground Station",
+                                "uri": "/StopPoint/940GZZLULSQ",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        ],
+                        "elevation": []
+                    },
+                    "routeOptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+                            "name": "Northern",
+                            "directions": [
+                                "Kennington Station via Charing Cross"
+                            ],
+                            "lineIdentifier": {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "northern",
+                                "name": "Northern",
+                                "uri": "/Line/northern",
+                                "type": "Line",
+                                "crowding": {
+                                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                                },
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        }
+                    ],
+                    "mode": {
+                        "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                        "id": "tube",
+                        "name": "tube",
+                        "type": "Mode",
+                        "routeType": "Unknown",
+                        "status": "Unknown"
+                    },
+                    "disruptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+                            "category": "PlannedWork",
+                            "type": "stopInfo",
+                            "categoryDescription": "PlannedWork",
+                            "description": "From Saturday 15 January to mid May 2022, the Northern line will be closed between Kennington and Moorgate as part of major upgrade works. \n\nDuring this time, Leicester Square Station is expected to be busy between 07:45-08:45 and 16:30-18:45. \n\nPlease consider travelling at the quieter times for a more comfortable journey. If you must travel at the busier times, allow more time for your journey.",
+                            "summary": "",
+                            "additionalInfo": "Check our <a href=\"http://www.tfl.gov.uk/northern-line-closure\">travel advice page </a>for more information",
+                            "created": "2021-11-04T17:20:00",
+                            "lastUpdate": "2021-11-04T17:21:00"
+                        }
+                    ],
+                    "plannedWorks": [],
+                    "isDisrupted": true,
+                    "hasFixedLocations": true
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+                    "duration": 23,
+                    "instruction": {
+                        "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+                        "summary": "Piccadilly line to Acton Town",
+                        "detailed": "Piccadilly line towards Hatton Cross",
+                        "steps": []
+                    },
+                    "obstacles": [],
+                    "departureTime": "2022-01-07T09:31:00",
+                    "arrivalTime": "2022-01-07T09:54:00",
+                    "departurePoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLULSQ",
+                        "platformName": "",
+                        "icsCode": "1000135",
+                        "commonName": "Leicester Square Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.51151475032,
+                        "lon": -0.12761327946
+                    },
+                    "arrivalPoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLUACT",
+                        "platformName": "",
+                        "icsCode": "1000002",
+                        "commonName": "Acton Town Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.50281364565,
+                        "lon": -0.27992335485000003
+                    },
+                    "path": {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+                        "lineString": "[[51.51154693579, -0.12764689022],[51.51123959069, -0.12840277843],[51.51053067631, -0.13075203517],[51.51033568681, -0.13149498423],[51.51007677929, -0.13330695867],[51.50960708791, -0.13492509383],[51.50960708791, -0.13492509383],[51.50946295567, -0.13542162197],[51.50840098863, -0.13876498579],[51.50815202736, -0.13951006358],[51.50775508221, -0.1405637753],[51.50745241719, -0.14132542819],[51.50714109072, -0.14194261337],[51.50714109072, -0.14194261337],[51.50620563109, -0.14379701293],[51.50584117644, -0.14463317644],[51.50439308278, -0.14745856884],[51.50382713453, -0.14863424531],[51.50355831772, -0.14926472576],[51.5033436452, -0.14990741464],[51.50318288971, -0.15054791446],[51.50268829722, -0.15367476289],[51.50268829722, -0.15367476289],[51.50243049075, -0.15530439673],[51.50234454305, -0.15612915575],[51.50225554705, -0.15790499789],[51.50217721135, -0.15864299072],[51.50203528527, -0.15934031773],[51.50179025681, -0.16034436908],[51.50161932788, -0.16091317727],[51.50154093013, -0.16107482473],[51.50141491676, -0.16124215333],[51.50141491676, -0.16124215333],[51.50112690177, -0.16162459327],[51.50074611019, -0.16200011802],[51.50015414521, -0.16267228786],[51.49976729498, -0.16323533984],[51.49849935922, -0.16553385907],[51.49821225073, -0.16615049125],[51.49787189295, -0.16681247356],[51.49754725513, -0.16732974508],[51.49682158759, -0.16865546415],[51.49657557542, -0.16902549263],[51.49640684781, -0.16916191401],[51.49584157367, -0.16924218993],[51.49536189764, -0.16904531378],[51.49510037907, -0.1689981679],[51.49473169233, -0.16899853537],[51.49441108677, -0.16919866068],[51.49426976895, -0.16936278863],[51.49410486084, -0.16974394965],[51.49399432205, -0.17015174248],[51.49394129639, -0.17078772496],[51.49401457684, -0.17326265337],[51.49401457684, -0.17326265337],[51.49407418278, -0.17527705428],[51.49378142925, -0.17900544763],[51.49378691891, -0.18051784029],[51.49387466921, -0.18153716156],[51.49423014455, -0.18309401028],[51.49423014455, -0.18309401028],[51.49482971321, -0.18572015513],[51.49490709594, -0.18665348339],[51.49482261759, -0.18816948014],[51.49471646166, -0.18886518215],[51.49444266042, -0.18976920715],[51.49403160383, -0.19052019112],[51.49244613635, -0.1926717502],[51.49176450464, -0.1936997145],[51.49176450464, -0.1936997145],[51.49050390242, -0.19560070223],[51.48993635411, -0.19670345334],[51.48964274665, -0.19749288036],[51.48954618492, -0.19823131581],[51.48955945267, -0.19909506012],[51.48962354255, -0.19975514055],[51.48978471879, -0.20029616374],[51.49016268591, -0.20090067952],[51.49044024696, -0.20140832334],[51.49056458459, -0.20189319214],[51.49083894854, -0.20336609718],[51.49094601713, -0.20448546898],[51.49092368436, -0.20478884879],[51.49088403769, -0.20513612287],[51.4903360229, -0.20811060601],[51.49019621778, -0.20896596118],[51.49011999668, -0.21045262339],[51.49016057498, -0.21134412118],[51.49040282633, -0.21366820117],[51.4904116709, -0.21388355762],[51.4904116709, -0.21388355762],[51.49047428308, -0.21540837889],[51.49041793613, -0.21643331258],[51.4901460911, -0.21807164222],[51.49011471448, -0.21896595054],[51.49018503026, -0.22004355659],[51.49034895321, -0.22077181035],[51.49062992288, -0.22150991913],[51.4910645424, -0.22229967955],[51.49210732178, -0.2235924548],[51.49210732178, -0.2235924548],[51.4928333043, -0.22449252917],[51.49310068802, -0.22492871185],[51.49330755644, -0.22552571115],[51.49354399647, -0.22629443585],[51.4937344074, -0.22699292561],[51.49387241422, -0.22779429393],[51.49389162508, -0.22847062012],[51.4938625608, -0.22952336733],[51.49413246427, -0.23609637831],[51.49416765347, -0.23664244205],[51.49463612357, -0.23969283971],[51.49482848299, -0.24112603403],[51.49490995737, -0.24236181984],[51.49526679363, -0.25454997443],[51.49526679363, -0.25454997443],[51.49529539136, -0.25552864659],[51.49529069168, -0.25642200817],[51.49510405624, -0.26020352799],[51.49470011041, -0.26389242917],[51.49460760363, -0.26493317096],[51.49450009304, -0.2661761603],[51.49447542257, -0.26694060845],[51.49461741054, -0.26803007429],[51.49492158603, -0.26914221544],[51.4952880256, -0.27020879586],[51.49570540839, -0.27107177814],[51.49874479649, -0.27595607466],[51.49987182754, -0.27738311875],[51.50052843591, -0.2780067116],[51.50209223387, -0.27917247055],[51.50276765264, -0.27985304418],[51.50281065916, -0.27992776777]]",
+                        "stopPoints": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUPCC",
+                                "name": "Piccadilly Circus Underground Station",
+                                "uri": "/StopPoint/940GZZLUPCC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGPK",
+                                "name": "Green Park Underground Station",
+                                "uri": "/StopPoint/940GZZLUGPK",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHPC",
+                                "name": "Hyde Park Corner Underground Station",
+                                "uri": "/StopPoint/940GZZLUHPC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUKNB",
+                                "name": "Knightsbridge Underground Station",
+                                "uri": "/StopPoint/940GZZLUKNB",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGTR",
+                                "name": "Gloucester Road Underground Station",
+                                "uri": "/StopPoint/940GZZLUGTR",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUECT",
+                                "name": "Earl's Court Underground Station",
+                                "uri": "/StopPoint/940GZZLUECT",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBSC",
+                                "name": "Barons Court Underground Station",
+                                "uri": "/StopPoint/940GZZLUBSC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHSD",
+                                "name": "Hammersmith (Dist&Picc Line) Underground Station",
+                                "uri": "/StopPoint/940GZZLUHSD",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUACT",
+                                "name": "Acton Town Underground Station",
+                                "uri": "/StopPoint/940GZZLUACT",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        ],
+                        "elevation": []
+                    },
+                    "routeOptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+                            "name": "Piccadilly",
+                            "directions": [
+                                "Hatton Cross Underground Station"
+                            ],
+                            "lineIdentifier": {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "piccadilly",
+                                "name": "Piccadilly",
+                                "uri": "/Line/piccadilly",
+                                "type": "Line",
+                                "crowding": {
+                                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                                },
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        }
+                    ],
+                    "mode": {
+                        "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                        "id": "tube",
+                        "name": "tube",
+                        "type": "Mode",
+                        "routeType": "Unknown",
+                        "status": "Unknown"
+                    },
+                    "disruptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+                            "category": "PlannedWork",
+                            "type": "stopInfo",
+                            "categoryDescription": "PlannedWork",
+                            "description": "From Saturday 15 January to mid May 2022, the Northern line will be closed between Kennington and Moorgate as part of major upgrade works. \n\nDuring this time, Leicester Square Station is expected to be busy between 07:45-08:45 and 16:30-18:45. \n\nPlease consider travelling at the quieter times for a more comfortable journey. If you must travel at the busier times, allow more time for your journey.",
+                            "summary": "",
+                            "additionalInfo": "Check our <a href=\"http://www.tfl.gov.uk/northern-line-closure\">travel advice page </a>for more information",
+                            "created": "2021-11-04T17:20:00",
+                            "lastUpdate": "2021-11-04T17:21:00"
+                        }
+                    ],
+                    "plannedWorks": [],
+                    "isDisrupted": true,
+                    "hasFixedLocations": true
+                }
+            ],
+            "fare": {
+                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyFare, Tfl.Api.Presentation.Entities",
+                "totalCost": 480,
+                "fares": [
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Fare, Tfl.Api.Presentation.Entities",
+                        "lowZone": 1,
+                        "highZone": 5,
+                        "cost": 480,
+                        "chargeProfileName": "Standard peak/off peak",
+                        "isHopperFare": false,
+                        "chargeLevel": "Peak",
+                        "peak": 480,
+                        "offPeak": 320,
+                        "taps": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTap, Tfl.Api.Presentation.Entities",
+                                "atcoCode": "940GZZLUEGW",
+                                "tapDetails": {
+                                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTapDetails, Tfl.Api.Presentation.Entities",
+                                    "modeType": "Rail",
+                                    "validationType": "None",
+                                    "hostDeviceType": "Gate",
+                                    "nationalLocationCode": 568,
+                                    "tapTimestamp": "2022-01-07T08:57:00+00:00"
+                                }
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTap, Tfl.Api.Presentation.Entities",
+                                "atcoCode": "940GZZLUACT",
+                                "tapDetails": {
+                                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTapDetails, Tfl.Api.Presentation.Entities",
+                                    "modeType": "Rail",
+                                    "validationType": "None",
+                                    "hostDeviceType": "Gate",
+                                    "nationalLocationCode": 500,
+                                    "tapTimestamp": "2022-01-07T09:54:00+00:00"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "caveats": [
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareCaveat, Tfl.Api.Presentation.Entities",
+                        "text": "<p>Fares between two stations may vary depending on the direction of travel, time of day and day of the week.</p><p>We charge higher fares at the busiest times of the day (usually between 06:30 and 09:30, and between 16:00 and 19:00, Monday to Friday).</p><p>When you pay as you go, you must touch your contactless or Oyster card on a yellow reader at the start and end of your journey.</p><p>Some journeys are charged via Zone 1 regardless of the route taken.</p><p>If your journey avoids Zone 1 and you see a pink card reader when changing trains, touch your contactless or Oyster card on it to pay the right fare.</p>",
+                        "type": "allRailModes"
+                    },
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareCaveat, Tfl.Api.Presentation.Entities",
+                        "text": "The price shown is a single adult pay as you go fare.",
+                        "type": "generic"
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
+            "startDateTime": "2022-01-07T09:00:00",
+            "duration": 59,
+            "arrivalDateTime": "2022-01-07T09:59:00",
+            "legs": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+                    "duration": 26,
+                    "instruction": {
+                        "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+                        "summary": "Northern line to King's Cross St.Pancras",
+                        "detailed": "Northern line towards Morden via Bank",
+                        "steps": []
+                    },
+                    "obstacles": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+                            "type": "ESCALATOR",
+                            "incline": "UP",
+                            "stopId": 1000129,
+                            "position": "AFTER"
+                        }
+                    ],
+                    "departureTime": "2022-01-07T09:00:00",
+                    "arrivalTime": "2022-01-07T09:26:00",
+                    "departurePoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLUEGW",
+                        "platformName": "",
+                        "icsCode": "1000070",
+                        "commonName": "Edgware Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.61354466997,
+                        "lon": -0.27501850604
+                    },
+                    "arrivalPoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLUKSX",
+                        "platformName": "",
+                        "icsCode": "1000129",
+                        "commonName": "King's Cross St. Pancras Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.53083808249,
+                        "lon": -0.12188971368
+                    },
+                    "path": {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+                        "lineString": "[[51.61354481055, -0.27501834827],[51.612790815, -0.27328499893],[51.61240358358, -0.27263530592],[51.61201996064, -0.27223101921],[51.61110247884, -0.27160148635],[51.60835038605, -0.27034846828],[51.60702357695, -0.26940242962],[51.60602200252, -0.26855960123],[51.60452297085, -0.26691262149],[51.60381582414, -0.26591427192],[51.60319790094, -0.26486923105],[51.60284298093, -0.2641457334],[51.60284298093, -0.2641457334],[51.60264159804, -0.26373522723],[51.60031013655, -0.25810615558],[51.59936707518, -0.25575978994],[51.59880062579, -0.25455418501],[51.59815628619, -0.25355374005],[51.59773364399, -0.25294909402],[51.59553288445, -0.25003672048],[51.59553288445, -0.25003672048],[51.59528442144, -0.24970794062],[51.59409903489, -0.24800657797],[51.59208192321, -0.24480703379],[51.59143210471, -0.24344616739],[51.58982309455, -0.23868657615],[51.58945830505, -0.23774791005],[51.58703349849, -0.23257288105],[51.58550192777, -0.22939893253],[51.58503226931, -0.2286665912],[51.58415274405, -0.22758935273],[51.58325814825, -0.22644751245],[51.58325814825, -0.22644751245],[51.58275903418, -0.22581048085],[51.58196014837, -0.22471577357],[51.58132389222, -0.22367249607],[51.58004039835, -0.22145655898],[51.57928883208, -0.21992715954],[51.57834808896, -0.21778461076],[51.57766552141, -0.21606500627],[51.57671198997, -0.21367776944],[51.57667407, -0.21359339666],[51.57667407, -0.21359339666],[51.57390093982, -0.20742386103],[51.5734148863, -0.20621635183],[51.57324033204, -0.20538623143],[51.57313921201, -0.20465423984],[51.57310843767, -0.20381846263],[51.57317275883, -0.20273361116],[51.57335713975, -0.20126881359],[51.57357266629, -0.20007696261],[51.57363261361, -0.19929531885],[51.57360002973, -0.198344159],[51.57351728267, -0.19764031188],[51.57327865171, -0.19674060272],[51.57292141047, -0.1957301526],[51.57280868904, -0.19541713884],[51.57243934287, -0.19420515964],[51.57241160205, -0.19409155108],[51.57241160205, -0.19409155108],[51.57220900666, -0.19326186858],[51.57148062475, -0.18917809396],[51.57124735381, -0.18804737029],[51.57094061752, -0.18681856959],[51.57051162015, -0.18582553421],[51.56972655044, -0.18448595461],[51.56895536428, -0.18346331787],[51.5681228251, -0.18254416737],[51.56752276967, -0.18212079373],[51.56533459606, -0.18076522567],[51.56257527706, -0.17969229277],[51.56215267253, -0.17969474135],[51.55842738703, -0.18011758661],[51.55808499283, -0.18007354978],[51.55763140201, -0.17981756247],[51.55706616582, -0.17932079904],[51.55657979508, -0.17869106648],[51.55640462927, -0.17837574869],[51.55640462927, -0.17837574869],[51.55611724729, -0.17785843788],[51.55578837611, -0.17694835414],[51.55558867488, -0.17624949645],[51.55542245086, -0.17539062684],[51.55497720525, -0.17336007045],[51.5547700677, -0.17276251429],[51.55368895812, -0.17032477833],[51.55256624122, -0.1681051946],[51.55232560675, -0.16766770715],[51.55152551607, -0.16653150523],[51.55124084325, -0.1661535029],[51.55039490264, -0.16496150389],[51.5502980064, -0.16480906992],[51.5502980064, -0.16480906992],[51.55009988509, -0.16449739498],[51.54957230075, -0.16353783317],[51.54864608548, -0.16181550184],[51.54789177721, -0.16073533728],[51.54744866062, -0.16000322119],[51.54721653118, -0.1595366358],[51.54661966494, -0.15817615638],[51.54626164609, -0.15713777593],[51.54599129385, -0.15652853817],[51.54522613843, -0.15533358388],[51.54421510479, -0.15353193189],[51.54421510479, -0.15353193189],[51.5439678895, -0.15309141619],[51.54379010735, -0.15265154299],[51.54337562232, -0.1514569203],[51.54312538556, -0.15041429461],[51.54262886644, -0.14801164771],[51.5424395755, -0.14741364044],[51.54214016461, -0.14667590021],[51.54168638107, -0.14584349683],[51.54091190458, -0.14463478955],[51.54039839226, -0.14400674727],[51.53965906934, -0.14331580702],[51.53950401494, -0.14317791425],[51.53926336322, -0.14296665726],[51.53926336322, -0.14296665726],[51.53826380234, -0.14208921617],[51.53774768187, -0.14186509807],[51.53694558531, -0.14175356989],[51.53307164243, -0.14186808027],[51.5324937559, -0.14171859467],[51.53187809624, -0.14145530764],[51.5312603811, -0.14106235168],[51.53092193684, -0.14070128033],[51.52955367679, -0.1389116256],[51.52913023044, -0.13829454331],[51.5286296262, -0.13734903213],[51.52837691842, -0.13672500578],[51.52781991793, -0.13506099815],[51.52774578553, -0.13435761263],[51.52785922236, -0.13357447563],[51.52834644646, -0.13232336651],[51.52834644646, -0.13232336651],[51.52967342576, -0.12891559578],[51.53066641047, -0.12633739074],[51.5308357846, -0.12568164358],[51.53081573603, -0.12217898581],[51.53083403091, -0.12188905651]]",
+                        "stopPoints": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBTK",
+                                "name": "Burnt Oak Underground Station",
+                                "uri": "/StopPoint/940GZZLUBTK",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCND",
+                                "name": "Colindale Underground Station",
+                                "uri": "/StopPoint/940GZZLUCND",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHCL",
+                                "name": "Hendon Central Underground Station",
+                                "uri": "/StopPoint/940GZZLUHCL",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBTX",
+                                "name": "Brent Cross Underground Station",
+                                "uri": "/StopPoint/940GZZLUBTX",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGGN",
+                                "name": "Golders Green Underground Station",
+                                "uri": "/StopPoint/940GZZLUGGN",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHTD",
+                                "name": "Hampstead Underground Station",
+                                "uri": "/StopPoint/940GZZLUHTD",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBZP",
+                                "name": "Belsize Park Underground Station",
+                                "uri": "/StopPoint/940GZZLUBZP",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCFM",
+                                "name": "Chalk Farm Underground Station",
+                                "uri": "/StopPoint/940GZZLUCFM",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCTN",
+                                "name": "Camden Town Underground Station",
+                                "uri": "/StopPoint/940GZZLUCTN",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUEUS",
+                                "name": "Euston Underground Station",
+                                "uri": "/StopPoint/940GZZLUEUS",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUKSX",
+                                "name": "King's Cross St. Pancras Underground Station",
+                                "uri": "/StopPoint/940GZZLUKSX",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        ],
+                        "elevation": []
+                    },
+                    "routeOptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+                            "name": "Northern",
+                            "directions": [
+                                "Morden via Bank"
+                            ],
+                            "lineIdentifier": {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "northern",
+                                "name": "Northern",
+                                "uri": "/Line/northern",
+                                "type": "Line",
+                                "crowding": {
+                                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                                },
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        }
+                    ],
+                    "mode": {
+                        "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                        "id": "tube",
+                        "name": "tube",
+                        "type": "Mode",
+                        "routeType": "Unknown",
+                        "status": "Unknown"
+                    },
+                    "disruptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+                            "category": "PlannedWork",
+                            "type": "stopInfo",
+                            "categoryDescription": "PlannedWork",
+                            "description": "From Saturday 15 January to mid May 2022, the Northern line will be closed between Kennington and Moorgate as part of major upgrade works. \n\nDuring this time, King's Cross St Pancras station is expected to be very busy between 07:45-08:45 and 16:30-18:45. . \n\nPlease consider travelling at the quieter times for a more comfortable journey. If you must travel at the busier times, allow more time for your journey.",
+                            "summary": "",
+                            "additionalInfo": "Check our <a href=\"http://www.tfl.gov.uk/northern-line-closure\">travel advice page </a>for more information",
+                            "created": "2021-11-04T16:44:00",
+                            "lastUpdate": "2021-11-04T16:45:00"
+                        }
+                    ],
+                    "plannedWorks": [],
+                    "isDisrupted": true,
+                    "hasFixedLocations": true
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+                    "duration": 30,
+                    "instruction": {
+                        "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+                        "summary": "Piccadilly line to Acton Town",
+                        "detailed": "Piccadilly line towards Heathrow Terminal 5",
+                        "steps": []
+                    },
+                    "obstacles": [],
+                    "departureTime": "2022-01-07T09:29:00",
+                    "arrivalTime": "2022-01-07T09:59:00",
+                    "departurePoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLUKSX",
+                        "platformName": "",
+                        "icsCode": "1000129",
+                        "commonName": "King's Cross St. Pancras Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.5313505632,
+                        "lon": -0.12300762712
+                    },
+                    "arrivalPoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLUACT",
+                        "platformName": "",
+                        "icsCode": "1000002",
+                        "commonName": "Acton Town Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.50281364565,
+                        "lon": -0.27992335485000003
+                    },
+                    "path": {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+                        "lineString": "[[51.5313505632, -0.12300762712],[51.530766435, -0.12303165322],[51.52993437057, -0.12329655338],[51.52629225413, -0.12553666249],[51.52597057791, -0.12566520206],[51.52569130241, -0.12563342272],[51.5243306474, -0.12489644146],[51.52340953472, -0.12433148747],[51.52340953472, -0.12433148747],[51.5232953487, -0.12426145445],[51.52280868974, -0.12419496185],[51.52225290229, -0.12430429025],[51.52202823709, -0.12431352177],[51.52169412005, -0.12422634731],[51.52144756516, -0.12399142932],[51.51992490097, -0.12212250219],[51.51912024013, -0.12129076539],[51.51864624557, -0.1208922713],[51.51720938354, -0.12014372639],[51.51720938354, -0.12014372639],[51.51715905692, -0.12011750921],[51.51679520659, -0.11985863975],[51.51649680187, -0.11975562307],[51.51630900698, -0.11982100889],[51.51608780526, -0.12004631246],[51.51584241316, -0.12044556443],[51.51534148453, -0.12117240908],[51.51516498238, -0.12138144938],[51.51481888766, -0.12166952774],[51.51454514628, -0.12198345069],[51.51347436688, -0.12362723796],[51.5131586816, -0.12413021938],[51.51302838542, -0.12436472578],[51.51302838542, -0.12436472578],[51.512503107, -0.12531009681],[51.51211228752, -0.12617643191],[51.51187124429, -0.12684925777],[51.51154693579, -0.12764689022],[51.51154693579, -0.12764689022],[51.51123959069, -0.12840277843],[51.51053067631, -0.13075203517],[51.51033568681, -0.13149498423],[51.51007677929, -0.13330695867],[51.50960708791, -0.13492509383],[51.50960708791, -0.13492509383],[51.50946295567, -0.13542162197],[51.50840098863, -0.13876498579],[51.50815202736, -0.13951006358],[51.50775508221, -0.1405637753],[51.50745241719, -0.14132542819],[51.50714109072, -0.14194261337],[51.50714109072, -0.14194261337],[51.50620563109, -0.14379701293],[51.50584117644, -0.14463317644],[51.50439308278, -0.14745856884],[51.50382713453, -0.14863424531],[51.50355831772, -0.14926472576],[51.5033436452, -0.14990741464],[51.50318288971, -0.15054791446],[51.50268829722, -0.15367476289],[51.50268829722, -0.15367476289],[51.50243049075, -0.15530439673],[51.50234454305, -0.15612915575],[51.50225554705, -0.15790499789],[51.50217721135, -0.15864299072],[51.50203528527, -0.15934031773],[51.50179025681, -0.16034436908],[51.50161932788, -0.16091317727],[51.50154093013, -0.16107482473],[51.50141491676, -0.16124215333],[51.50141491676, -0.16124215333],[51.50112690177, -0.16162459327],[51.50074611019, -0.16200011802],[51.50015414521, -0.16267228786],[51.49976729498, -0.16323533984],[51.49849935922, -0.16553385907],[51.49821225073, -0.16615049125],[51.49787189295, -0.16681247356],[51.49754725513, -0.16732974508],[51.49682158759, -0.16865546415],[51.49657557542, -0.16902549263],[51.49640684781, -0.16916191401],[51.49584157367, -0.16924218993],[51.49536189764, -0.16904531378],[51.49510037907, -0.1689981679],[51.49473169233, -0.16899853537],[51.49441108677, -0.16919866068],[51.49426976895, -0.16936278863],[51.49410486084, -0.16974394965],[51.49399432205, -0.17015174248],[51.49394129639, -0.17078772496],[51.49401457684, -0.17326265337],[51.49401457684, -0.17326265337],[51.49407418278, -0.17527705428],[51.49378142925, -0.17900544763],[51.49378691891, -0.18051784029],[51.49387466921, -0.18153716156],[51.49423014455, -0.18309401028],[51.49423014455, -0.18309401028],[51.49482971321, -0.18572015513],[51.49490709594, -0.18665348339],[51.49482261759, -0.18816948014],[51.49471646166, -0.18886518215],[51.49444266042, -0.18976920715],[51.49403160383, -0.19052019112],[51.49244613635, -0.1926717502],[51.49176450464, -0.1936997145],[51.49176450464, -0.1936997145],[51.49050390242, -0.19560070223],[51.48993635411, -0.19670345334],[51.48964274665, -0.19749288036],[51.48954618492, -0.19823131581],[51.48955945267, -0.19909506012],[51.48962354255, -0.19975514055],[51.48978471879, -0.20029616374],[51.49016268591, -0.20090067952],[51.49044024696, -0.20140832334],[51.49056458459, -0.20189319214],[51.49083894854, -0.20336609718],[51.49094601713, -0.20448546898],[51.49092368436, -0.20478884879],[51.49088403769, -0.20513612287],[51.4903360229, -0.20811060601],[51.49019621778, -0.20896596118],[51.49011999668, -0.21045262339],[51.49016057498, -0.21134412118],[51.49040282633, -0.21366820117],[51.4904116709, -0.21388355762],[51.4904116709, -0.21388355762],[51.49047428308, -0.21540837889],[51.49041793613, -0.21643331258],[51.4901460911, -0.21807164222],[51.49011471448, -0.21896595054],[51.49018503026, -0.22004355659],[51.49034895321, -0.22077181035],[51.49062992288, -0.22150991913],[51.4910645424, -0.22229967955],[51.49210732178, -0.2235924548],[51.49210732178, -0.2235924548],[51.4928333043, -0.22449252917],[51.49310068802, -0.22492871185],[51.49330755644, -0.22552571115],[51.49354399647, -0.22629443585],[51.4937344074, -0.22699292561],[51.49387241422, -0.22779429393],[51.49389162508, -0.22847062012],[51.4938625608, -0.22952336733],[51.49413246427, -0.23609637831],[51.49416765347, -0.23664244205],[51.49463612357, -0.23969283971],[51.49482848299, -0.24112603403],[51.49490995737, -0.24236181984],[51.49526679363, -0.25454997443],[51.49526679363, -0.25454997443],[51.49529539136, -0.25552864659],[51.49529069168, -0.25642200817],[51.49510405624, -0.26020352799],[51.49470011041, -0.26389242917],[51.49460760363, -0.26493317096],[51.49450009304, -0.2661761603],[51.49447542257, -0.26694060845],[51.49461741054, -0.26803007429],[51.49492158603, -0.26914221544],[51.4952880256, -0.27020879586],[51.49570540839, -0.27107177814],[51.49874479649, -0.27595607466],[51.49987182754, -0.27738311875],[51.50052843591, -0.2780067116],[51.50209223387, -0.27917247055],[51.50276765264, -0.27985304418],[51.50281065916, -0.27992776777]]",
+                        "stopPoints": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLURSQ",
+                                "name": "Russell Square Underground Station",
+                                "uri": "/StopPoint/940GZZLURSQ",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHBN",
+                                "name": "Holborn Underground Station",
+                                "uri": "/StopPoint/940GZZLUHBN",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCGN",
+                                "name": "Covent Garden Underground Station",
+                                "uri": "/StopPoint/940GZZLUCGN",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLULSQ",
+                                "name": "Leicester Square Underground Station",
+                                "uri": "/StopPoint/940GZZLULSQ",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUPCC",
+                                "name": "Piccadilly Circus Underground Station",
+                                "uri": "/StopPoint/940GZZLUPCC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGPK",
+                                "name": "Green Park Underground Station",
+                                "uri": "/StopPoint/940GZZLUGPK",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHPC",
+                                "name": "Hyde Park Corner Underground Station",
+                                "uri": "/StopPoint/940GZZLUHPC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUKNB",
+                                "name": "Knightsbridge Underground Station",
+                                "uri": "/StopPoint/940GZZLUKNB",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGTR",
+                                "name": "Gloucester Road Underground Station",
+                                "uri": "/StopPoint/940GZZLUGTR",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUECT",
+                                "name": "Earl's Court Underground Station",
+                                "uri": "/StopPoint/940GZZLUECT",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBSC",
+                                "name": "Barons Court Underground Station",
+                                "uri": "/StopPoint/940GZZLUBSC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHSD",
+                                "name": "Hammersmith (Dist&Picc Line) Underground Station",
+                                "uri": "/StopPoint/940GZZLUHSD",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUACT",
+                                "name": "Acton Town Underground Station",
+                                "uri": "/StopPoint/940GZZLUACT",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        ],
+                        "elevation": []
+                    },
+                    "routeOptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+                            "name": "Piccadilly",
+                            "directions": [
+                                "Heathrow Terminal 5 Underground Station"
+                            ],
+                            "lineIdentifier": {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "piccadilly",
+                                "name": "Piccadilly",
+                                "uri": "/Line/piccadilly",
+                                "type": "Line",
+                                "crowding": {
+                                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                                },
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        }
+                    ],
+                    "mode": {
+                        "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                        "id": "tube",
+                        "name": "tube",
+                        "type": "Mode",
+                        "routeType": "Unknown",
+                        "status": "Unknown"
+                    },
+                    "disruptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+                            "category": "PlannedWork",
+                            "type": "stopInfo",
+                            "categoryDescription": "PlannedWork",
+                            "description": "From Saturday 15 January to mid May 2022, the Northern line will be closed between Kennington and Moorgate as part of major upgrade works. \n\nDuring this time, King's Cross St Pancras station is expected to be very busy between 07:45-08:45 and 16:30-18:45. . \n\nPlease consider travelling at the quieter times for a more comfortable journey. If you must travel at the busier times, allow more time for your journey.",
+                            "summary": "",
+                            "additionalInfo": "Check our <a href=\"http://www.tfl.gov.uk/northern-line-closure\">travel advice page </a>for more information",
+                            "created": "2021-11-04T16:44:00",
+                            "lastUpdate": "2021-11-04T16:45:00"
+                        }
+                    ],
+                    "plannedWorks": [],
+                    "isDisrupted": true,
+                    "hasFixedLocations": true
+                }
+            ],
+            "fare": {
+                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyFare, Tfl.Api.Presentation.Entities",
+                "totalCost": 480,
+                "fares": [
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Fare, Tfl.Api.Presentation.Entities",
+                        "lowZone": 1,
+                        "highZone": 5,
+                        "cost": 480,
+                        "chargeProfileName": "Standard peak/off peak",
+                        "isHopperFare": false,
+                        "chargeLevel": "Peak",
+                        "peak": 480,
+                        "offPeak": 320,
+                        "taps": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTap, Tfl.Api.Presentation.Entities",
+                                "atcoCode": "940GZZLUEGW",
+                                "tapDetails": {
+                                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTapDetails, Tfl.Api.Presentation.Entities",
+                                    "modeType": "Rail",
+                                    "validationType": "None",
+                                    "hostDeviceType": "Gate",
+                                    "nationalLocationCode": 568,
+                                    "tapTimestamp": "2022-01-07T09:00:00+00:00"
+                                }
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTap, Tfl.Api.Presentation.Entities",
+                                "atcoCode": "940GZZLUACT",
+                                "tapDetails": {
+                                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTapDetails, Tfl.Api.Presentation.Entities",
+                                    "modeType": "Rail",
+                                    "validationType": "None",
+                                    "hostDeviceType": "Gate",
+                                    "nationalLocationCode": 500,
+                                    "tapTimestamp": "2022-01-07T09:59:00+00:00"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "caveats": [
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareCaveat, Tfl.Api.Presentation.Entities",
+                        "text": "<p>Fares between two stations may vary depending on the direction of travel, time of day and day of the week.</p><p>We charge higher fares at the busiest times of the day (usually between 06:30 and 09:30, and between 16:00 and 19:00, Monday to Friday).</p><p>When you pay as you go, you must touch your contactless or Oyster card on a yellow reader at the start and end of your journey.</p><p>Some journeys are charged via Zone 1 regardless of the route taken.</p><p>If your journey avoids Zone 1 and you see a pink card reader when changing trains, touch your contactless or Oyster card on it to pay the right fare.</p>",
+                        "type": "allRailModes"
+                    },
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareCaveat, Tfl.Api.Presentation.Entities",
+                        "text": "The price shown is a single adult pay as you go fare.",
+                        "type": "generic"
+                    }
+                ]
+            }
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Journey, Tfl.Api.Presentation.Entities",
+            "startDateTime": "2022-01-07T09:03:00",
+            "duration": 58,
+            "arrivalDateTime": "2022-01-07T10:01:00",
+            "legs": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+                    "duration": 30,
+                    "instruction": {
+                        "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+                        "summary": "Northern line to Leicester Square",
+                        "detailed": "Northern line towards Battersea Power Station via Charing Cross",
+                        "steps": []
+                    },
+                    "obstacles": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+                            "type": "STAIRS",
+                            "incline": "DOWN",
+                            "stopId": 1000135,
+                            "position": "AFTER"
+                        },
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Obstacle, Tfl.Api.Presentation.Entities",
+                            "type": "STAIRS",
+                            "incline": "DOWN",
+                            "stopId": 1000135,
+                            "position": "AFTER"
+                        }
+                    ],
+                    "departureTime": "2022-01-07T09:03:00",
+                    "arrivalTime": "2022-01-07T09:33:00",
+                    "departurePoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLUEGW",
+                        "platformName": "",
+                        "icsCode": "1000070",
+                        "commonName": "Edgware Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.61354466997,
+                        "lon": -0.27501850604
+                    },
+                    "arrivalPoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLULSQ",
+                        "platformName": "",
+                        "icsCode": "1000135",
+                        "commonName": "Leicester Square Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.51197626578,
+                        "lon": -0.12835817403
+                    },
+                    "path": {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+                        "lineString": "[[51.61354481055, -0.27501834827],[51.612790815, -0.27328499893],[51.61240358358, -0.27263530592],[51.61201996064, -0.27223101921],[51.61110247884, -0.27160148635],[51.60835038605, -0.27034846828],[51.60702357695, -0.26940242962],[51.60602200252, -0.26855960123],[51.60452297085, -0.26691262149],[51.60381582414, -0.26591427192],[51.60319790094, -0.26486923105],[51.60284298093, -0.2641457334],[51.60284298093, -0.2641457334],[51.60264159804, -0.26373522723],[51.60031013655, -0.25810615558],[51.59936707518, -0.25575978994],[51.59880062579, -0.25455418501],[51.59815628619, -0.25355374005],[51.59773364399, -0.25294909402],[51.59553288445, -0.25003672048],[51.59553288445, -0.25003672048],[51.59528442144, -0.24970794062],[51.59409903489, -0.24800657797],[51.59208192321, -0.24480703379],[51.59143210471, -0.24344616739],[51.58982309455, -0.23868657615],[51.58945830505, -0.23774791005],[51.58703349849, -0.23257288105],[51.58550192777, -0.22939893253],[51.58503226931, -0.2286665912],[51.58415274405, -0.22758935273],[51.58325814825, -0.22644751245],[51.58325814825, -0.22644751245],[51.58275903418, -0.22581048085],[51.58196014837, -0.22471577357],[51.58132389222, -0.22367249607],[51.58004039835, -0.22145655898],[51.57928883208, -0.21992715954],[51.57834808896, -0.21778461076],[51.57766552141, -0.21606500627],[51.57671198997, -0.21367776944],[51.57667407, -0.21359339666],[51.57667407, -0.21359339666],[51.57390093982, -0.20742386103],[51.5734148863, -0.20621635183],[51.57324033204, -0.20538623143],[51.57313921201, -0.20465423984],[51.57310843767, -0.20381846263],[51.57317275883, -0.20273361116],[51.57335713975, -0.20126881359],[51.57357266629, -0.20007696261],[51.57363261361, -0.19929531885],[51.57360002973, -0.198344159],[51.57351728267, -0.19764031188],[51.57327865171, -0.19674060272],[51.57292141047, -0.1957301526],[51.57280868904, -0.19541713884],[51.57243934287, -0.19420515964],[51.57241160205, -0.19409155108],[51.57241160205, -0.19409155108],[51.57220900666, -0.19326186858],[51.57148062475, -0.18917809396],[51.57124735381, -0.18804737029],[51.57094061752, -0.18681856959],[51.57051162015, -0.18582553421],[51.56972655044, -0.18448595461],[51.56895536428, -0.18346331787],[51.5681228251, -0.18254416737],[51.56752276967, -0.18212079373],[51.56533459606, -0.18076522567],[51.56257527706, -0.17969229277],[51.56215267253, -0.17969474135],[51.55842738703, -0.18011758661],[51.55808499283, -0.18007354978],[51.55763140201, -0.17981756247],[51.55706616582, -0.17932079904],[51.55657979508, -0.17869106648],[51.55640462927, -0.17837574869],[51.55640462927, -0.17837574869],[51.55611724729, -0.17785843788],[51.55578837611, -0.17694835414],[51.55558867488, -0.17624949645],[51.55542245086, -0.17539062684],[51.55497720525, -0.17336007045],[51.5547700677, -0.17276251429],[51.55368895812, -0.17032477833],[51.55256624122, -0.1681051946],[51.55232560675, -0.16766770715],[51.55152551607, -0.16653150523],[51.55124084325, -0.1661535029],[51.55039490264, -0.16496150389],[51.5502980064, -0.16480906992],[51.5502980064, -0.16480906992],[51.55009988509, -0.16449739498],[51.54957230075, -0.16353783317],[51.54864608548, -0.16181550184],[51.54789177721, -0.16073533728],[51.54744866062, -0.16000322119],[51.54721653118, -0.1595366358],[51.54661966494, -0.15817615638],[51.54626164609, -0.15713777593],[51.54599129385, -0.15652853817],[51.54522613843, -0.15533358388],[51.54421510479, -0.15353193189],[51.54421510479, -0.15353193189],[51.5439678895, -0.15309141619],[51.54379010735, -0.15265154299],[51.54337562232, -0.1514569203],[51.54312538556, -0.15041429461],[51.54262886644, -0.14801164771],[51.5424395755, -0.14741364044],[51.54214016461, -0.14667590021],[51.54168638107, -0.14584349683],[51.54091190458, -0.14463478955],[51.54039839226, -0.14400674727],[51.53965906934, -0.14331580702],[51.53950401494, -0.14317791425],[51.53926336322, -0.14296665726],[51.53926336322, -0.14296665726],[51.53826380234, -0.14208921617],[51.53667774748, -0.14074069844],[51.53576377509, -0.13981185964],[51.53511566638, -0.13920384889],[51.53436925119, -0.13859814587],[51.53436925119, -0.13859814587],[51.53416825095, -0.13843504142],[51.53307848101, -0.13719627107],[51.53002289401, -0.13391850645],[51.52956920663, -0.13366313102],[51.52920905313, -0.1336346084],[51.5287622423, -0.13381146741],[51.52834399536, -0.13408807268],[51.52820254486, -0.13426599401],[51.52820254486, -0.13426599401],[51.5279649021, -0.13456490599],[51.52769410477, -0.1350661392],[51.5265974297, -0.13792212156],[51.52641351189, -0.13823236524],[51.52612129589, -0.13851819099],[51.52574614168, -0.13867765115],[51.52536641516, -0.13854897767],[51.5245383382, -0.13793404567],[51.52426385537, -0.13774979158],[51.52426385537, -0.13774979158],[51.52364758019, -0.1373361087],[51.52079011298, -0.13464188952],[51.52065256978, -0.1344894599],[51.52065256978, -0.1344894599],[51.52011272699, -0.13389120034],[51.51706141428, -0.13088824138],[51.51654389556, -0.13057792624],[51.51594500288, -0.1304186363],[51.51594500288, -0.1304186363],[51.51583949323, -0.13039057389],[51.51385717966, -0.12957818059],[51.51193068251, -0.12858536467]]",
+                        "stopPoints": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBTK",
+                                "name": "Burnt Oak Underground Station",
+                                "uri": "/StopPoint/940GZZLUBTK",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCND",
+                                "name": "Colindale Underground Station",
+                                "uri": "/StopPoint/940GZZLUCND",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHCL",
+                                "name": "Hendon Central Underground Station",
+                                "uri": "/StopPoint/940GZZLUHCL",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBTX",
+                                "name": "Brent Cross Underground Station",
+                                "uri": "/StopPoint/940GZZLUBTX",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGGN",
+                                "name": "Golders Green Underground Station",
+                                "uri": "/StopPoint/940GZZLUGGN",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHTD",
+                                "name": "Hampstead Underground Station",
+                                "uri": "/StopPoint/940GZZLUHTD",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBZP",
+                                "name": "Belsize Park Underground Station",
+                                "uri": "/StopPoint/940GZZLUBZP",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCFM",
+                                "name": "Chalk Farm Underground Station",
+                                "uri": "/StopPoint/940GZZLUCFM",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUCTN",
+                                "name": "Camden Town Underground Station",
+                                "uri": "/StopPoint/940GZZLUCTN",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUMTC",
+                                "name": "Mornington Crescent Underground Station",
+                                "uri": "/StopPoint/940GZZLUMTC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUEUS",
+                                "name": "Euston Underground Station",
+                                "uri": "/StopPoint/940GZZLUEUS",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUWRR",
+                                "name": "Warren Street Underground Station",
+                                "uri": "/StopPoint/940GZZLUWRR",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGDG",
+                                "name": "Goodge Street Underground Station",
+                                "uri": "/StopPoint/940GZZLUGDG",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUTCR",
+                                "name": "Tottenham Court Road Underground Station",
+                                "uri": "/StopPoint/940GZZLUTCR",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLULSQ",
+                                "name": "Leicester Square Underground Station",
+                                "uri": "/StopPoint/940GZZLULSQ",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        ],
+                        "elevation": []
+                    },
+                    "routeOptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+                            "name": "Northern",
+                            "directions": [
+                                "Battersea Power Station Underground Station via Charing Cross"
+                            ],
+                            "lineIdentifier": {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "northern",
+                                "name": "Northern",
+                                "uri": "/Line/northern",
+                                "type": "Line",
+                                "crowding": {
+                                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                                },
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        }
+                    ],
+                    "mode": {
+                        "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                        "id": "tube",
+                        "name": "tube",
+                        "type": "Mode",
+                        "routeType": "Unknown",
+                        "status": "Unknown"
+                    },
+                    "disruptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+                            "category": "PlannedWork",
+                            "type": "stopInfo",
+                            "categoryDescription": "PlannedWork",
+                            "description": "From Saturday 15 January to mid May 2022, the Northern line will be closed between Kennington and Moorgate as part of major upgrade works. \n\nDuring this time, Leicester Square Station is expected to be busy between 07:45-08:45 and 16:30-18:45. \n\nPlease consider travelling at the quieter times for a more comfortable journey. If you must travel at the busier times, allow more time for your journey.",
+                            "summary": "",
+                            "additionalInfo": "Check our <a href=\"http://www.tfl.gov.uk/northern-line-closure\">travel advice page </a>for more information",
+                            "created": "2021-11-04T17:20:00",
+                            "lastUpdate": "2021-11-04T17:21:00"
+                        }
+                    ],
+                    "plannedWorks": [],
+                    "isDisrupted": true,
+                    "hasFixedLocations": true
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Leg, Tfl.Api.Presentation.Entities",
+                    "duration": 23,
+                    "instruction": {
+                        "$type": "Tfl.Api.Presentation.Entities.Instruction, Tfl.Api.Presentation.Entities",
+                        "summary": "Piccadilly line to Acton Town",
+                        "detailed": "Piccadilly line towards Hatton Cross",
+                        "steps": []
+                    },
+                    "obstacles": [],
+                    "departureTime": "2022-01-07T09:38:00",
+                    "arrivalTime": "2022-01-07T10:01:00",
+                    "departurePoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLULSQ",
+                        "platformName": "",
+                        "icsCode": "1000135",
+                        "commonName": "Leicester Square Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.51151475032,
+                        "lon": -0.12761327946
+                    },
+                    "arrivalPoint": {
+                        "$type": "Tfl.Api.Presentation.Entities.StopPoint, Tfl.Api.Presentation.Entities",
+                        "naptanId": "940GZZLUACT",
+                        "platformName": "",
+                        "icsCode": "1000002",
+                        "commonName": "Acton Town Underground Station",
+                        "placeType": "StopPoint",
+                        "additionalProperties": [],
+                        "lat": 51.50281364565,
+                        "lon": -0.27992335485000003
+                    },
+                    "path": {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Path, Tfl.Api.Presentation.Entities",
+                        "lineString": "[[51.51154693579, -0.12764689022],[51.51123959069, -0.12840277843],[51.51053067631, -0.13075203517],[51.51033568681, -0.13149498423],[51.51007677929, -0.13330695867],[51.50960708791, -0.13492509383],[51.50960708791, -0.13492509383],[51.50946295567, -0.13542162197],[51.50840098863, -0.13876498579],[51.50815202736, -0.13951006358],[51.50775508221, -0.1405637753],[51.50745241719, -0.14132542819],[51.50714109072, -0.14194261337],[51.50714109072, -0.14194261337],[51.50620563109, -0.14379701293],[51.50584117644, -0.14463317644],[51.50439308278, -0.14745856884],[51.50382713453, -0.14863424531],[51.50355831772, -0.14926472576],[51.5033436452, -0.14990741464],[51.50318288971, -0.15054791446],[51.50268829722, -0.15367476289],[51.50268829722, -0.15367476289],[51.50243049075, -0.15530439673],[51.50234454305, -0.15612915575],[51.50225554705, -0.15790499789],[51.50217721135, -0.15864299072],[51.50203528527, -0.15934031773],[51.50179025681, -0.16034436908],[51.50161932788, -0.16091317727],[51.50154093013, -0.16107482473],[51.50141491676, -0.16124215333],[51.50141491676, -0.16124215333],[51.50112690177, -0.16162459327],[51.50074611019, -0.16200011802],[51.50015414521, -0.16267228786],[51.49976729498, -0.16323533984],[51.49849935922, -0.16553385907],[51.49821225073, -0.16615049125],[51.49787189295, -0.16681247356],[51.49754725513, -0.16732974508],[51.49682158759, -0.16865546415],[51.49657557542, -0.16902549263],[51.49640684781, -0.16916191401],[51.49584157367, -0.16924218993],[51.49536189764, -0.16904531378],[51.49510037907, -0.1689981679],[51.49473169233, -0.16899853537],[51.49441108677, -0.16919866068],[51.49426976895, -0.16936278863],[51.49410486084, -0.16974394965],[51.49399432205, -0.17015174248],[51.49394129639, -0.17078772496],[51.49401457684, -0.17326265337],[51.49401457684, -0.17326265337],[51.49407418278, -0.17527705428],[51.49378142925, -0.17900544763],[51.49378691891, -0.18051784029],[51.49387466921, -0.18153716156],[51.49423014455, -0.18309401028],[51.49423014455, -0.18309401028],[51.49482971321, -0.18572015513],[51.49490709594, -0.18665348339],[51.49482261759, -0.18816948014],[51.49471646166, -0.18886518215],[51.49444266042, -0.18976920715],[51.49403160383, -0.19052019112],[51.49244613635, -0.1926717502],[51.49176450464, -0.1936997145],[51.49176450464, -0.1936997145],[51.49050390242, -0.19560070223],[51.48993635411, -0.19670345334],[51.48964274665, -0.19749288036],[51.48954618492, -0.19823131581],[51.48955945267, -0.19909506012],[51.48962354255, -0.19975514055],[51.48978471879, -0.20029616374],[51.49016268591, -0.20090067952],[51.49044024696, -0.20140832334],[51.49056458459, -0.20189319214],[51.49083894854, -0.20336609718],[51.49094601713, -0.20448546898],[51.49092368436, -0.20478884879],[51.49088403769, -0.20513612287],[51.4903360229, -0.20811060601],[51.49019621778, -0.20896596118],[51.49011999668, -0.21045262339],[51.49016057498, -0.21134412118],[51.49040282633, -0.21366820117],[51.4904116709, -0.21388355762],[51.4904116709, -0.21388355762],[51.49047428308, -0.21540837889],[51.49041793613, -0.21643331258],[51.4901460911, -0.21807164222],[51.49011471448, -0.21896595054],[51.49018503026, -0.22004355659],[51.49034895321, -0.22077181035],[51.49062992288, -0.22150991913],[51.4910645424, -0.22229967955],[51.49210732178, -0.2235924548],[51.49210732178, -0.2235924548],[51.4928333043, -0.22449252917],[51.49310068802, -0.22492871185],[51.49330755644, -0.22552571115],[51.49354399647, -0.22629443585],[51.4937344074, -0.22699292561],[51.49387241422, -0.22779429393],[51.49389162508, -0.22847062012],[51.4938625608, -0.22952336733],[51.49413246427, -0.23609637831],[51.49416765347, -0.23664244205],[51.49463612357, -0.23969283971],[51.49482848299, -0.24112603403],[51.49490995737, -0.24236181984],[51.49526679363, -0.25454997443],[51.49526679363, -0.25454997443],[51.49529539136, -0.25552864659],[51.49529069168, -0.25642200817],[51.49510405624, -0.26020352799],[51.49470011041, -0.26389242917],[51.49460760363, -0.26493317096],[51.49450009304, -0.2661761603],[51.49447542257, -0.26694060845],[51.49461741054, -0.26803007429],[51.49492158603, -0.26914221544],[51.4952880256, -0.27020879586],[51.49570540839, -0.27107177814],[51.49874479649, -0.27595607466],[51.49987182754, -0.27738311875],[51.50052843591, -0.2780067116],[51.50209223387, -0.27917247055],[51.50276765264, -0.27985304418],[51.50281065916, -0.27992776777]]",
+                        "stopPoints": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUPCC",
+                                "name": "Piccadilly Circus Underground Station",
+                                "uri": "/StopPoint/940GZZLUPCC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGPK",
+                                "name": "Green Park Underground Station",
+                                "uri": "/StopPoint/940GZZLUGPK",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHPC",
+                                "name": "Hyde Park Corner Underground Station",
+                                "uri": "/StopPoint/940GZZLUHPC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUKNB",
+                                "name": "Knightsbridge Underground Station",
+                                "uri": "/StopPoint/940GZZLUKNB",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUGTR",
+                                "name": "Gloucester Road Underground Station",
+                                "uri": "/StopPoint/940GZZLUGTR",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUECT",
+                                "name": "Earl's Court Underground Station",
+                                "uri": "/StopPoint/940GZZLUECT",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUBSC",
+                                "name": "Barons Court Underground Station",
+                                "uri": "/StopPoint/940GZZLUBSC",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUHSD",
+                                "name": "Hammersmith (Dist&Picc Line) Underground Station",
+                                "uri": "/StopPoint/940GZZLUHSD",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "940GZZLUACT",
+                                "name": "Acton Town Underground Station",
+                                "uri": "/StopPoint/940GZZLUACT",
+                                "type": "StopPoint",
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        ],
+                        "elevation": []
+                    },
+                    "routeOptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.RouteOption, Tfl.Api.Presentation.Entities",
+                            "name": "Piccadilly",
+                            "directions": [
+                                "Hatton Cross Underground Station"
+                            ],
+                            "lineIdentifier": {
+                                "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                                "id": "piccadilly",
+                                "name": "Piccadilly",
+                                "uri": "/Line/piccadilly",
+                                "type": "Line",
+                                "crowding": {
+                                    "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+                                },
+                                "routeType": "Unknown",
+                                "status": "Unknown"
+                            }
+                        }
+                    ],
+                    "mode": {
+                        "$type": "Tfl.Api.Presentation.Entities.Identifier, Tfl.Api.Presentation.Entities",
+                        "id": "tube",
+                        "name": "tube",
+                        "type": "Mode",
+                        "routeType": "Unknown",
+                        "status": "Unknown"
+                    },
+                    "disruptions": [
+                        {
+                            "$type": "Tfl.Api.Presentation.Entities.Disruption, Tfl.Api.Presentation.Entities",
+                            "category": "PlannedWork",
+                            "type": "stopInfo",
+                            "categoryDescription": "PlannedWork",
+                            "description": "From Saturday 15 January to mid May 2022, the Northern line will be closed between Kennington and Moorgate as part of major upgrade works. \n\nDuring this time, Leicester Square Station is expected to be busy between 07:45-08:45 and 16:30-18:45. \n\nPlease consider travelling at the quieter times for a more comfortable journey. If you must travel at the busier times, allow more time for your journey.",
+                            "summary": "",
+                            "additionalInfo": "Check our <a href=\"http://www.tfl.gov.uk/northern-line-closure\">travel advice page </a>for more information",
+                            "created": "2021-11-04T17:20:00",
+                            "lastUpdate": "2021-11-04T17:21:00"
+                        }
+                    ],
+                    "plannedWorks": [],
+                    "isDisrupted": true,
+                    "hasFixedLocations": true
+                }
+            ],
+            "fare": {
+                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyFare, Tfl.Api.Presentation.Entities",
+                "totalCost": 480,
+                "fares": [
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.Fare, Tfl.Api.Presentation.Entities",
+                        "lowZone": 1,
+                        "highZone": 5,
+                        "cost": 480,
+                        "chargeProfileName": "Standard peak/off peak",
+                        "isHopperFare": false,
+                        "chargeLevel": "Peak",
+                        "peak": 480,
+                        "offPeak": 320,
+                        "taps": [
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTap, Tfl.Api.Presentation.Entities",
+                                "atcoCode": "940GZZLUEGW",
+                                "tapDetails": {
+                                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTapDetails, Tfl.Api.Presentation.Entities",
+                                    "modeType": "Rail",
+                                    "validationType": "None",
+                                    "hostDeviceType": "Gate",
+                                    "nationalLocationCode": 568,
+                                    "tapTimestamp": "2022-01-07T09:03:00+00:00"
+                                }
+                            },
+                            {
+                                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTap, Tfl.Api.Presentation.Entities",
+                                "atcoCode": "940GZZLUACT",
+                                "tapDetails": {
+                                    "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareTapDetails, Tfl.Api.Presentation.Entities",
+                                    "modeType": "Rail",
+                                    "validationType": "None",
+                                    "hostDeviceType": "Gate",
+                                    "nationalLocationCode": 500,
+                                    "tapTimestamp": "2022-01-07T10:01:00+00:00"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "caveats": [
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareCaveat, Tfl.Api.Presentation.Entities",
+                        "text": "<p>Fares between two stations may vary depending on the direction of travel, time of day and day of the week.</p><p>We charge higher fares at the busiest times of the day (usually between 06:30 and 09:30, and between 16:00 and 19:00, Monday to Friday).</p><p>When you pay as you go, you must touch your contactless or Oyster card on a yellow reader at the start and end of your journey.</p><p>Some journeys are charged via Zone 1 regardless of the route taken.</p><p>If your journey avoids Zone 1 and you see a pink card reader when changing trains, touch your contactless or Oyster card on it to pay the right fare.</p>",
+                        "type": "allRailModes"
+                    },
+                    {
+                        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.FareCaveat, Tfl.Api.Presentation.Entities",
+                        "text": "The price shown is a single adult pay as you go fare.",
+                        "type": "generic"
+                    }
+                ]
+            }
+        }
+    ],
+    "lines": [
+        {
+            "$type": "Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities",
+            "id": "northern",
+            "name": "Northern",
+            "modeName": "tube",
+            "disruptions": [],
+            "created": "2022-01-04T14:26:39.157Z",
+            "modified": "2022-01-04T14:26:39.157Z",
+            "lineStatuses": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities",
+                    "id": 0,
+                    "statusSeverity": 10,
+                    "statusSeverityDescription": "Good Service",
+                    "created": "0001-01-01T00:00:00",
+                    "validityPeriods": []
+                }
+            ],
+            "routeSections": [],
+            "serviceTypes": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
+                    "name": "Regular",
+                    "uri": "/Line/Route?ids=Northern&serviceTypes=Regular"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
+                    "name": "Night",
+                    "uri": "/Line/Route?ids=Northern&serviceTypes=Night"
+                }
+            ],
+            "crowding": {
+                "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+            }
+        },
+        {
+            "$type": "Tfl.Api.Presentation.Entities.Line, Tfl.Api.Presentation.Entities",
+            "id": "piccadilly",
+            "name": "Piccadilly",
+            "modeName": "tube",
+            "disruptions": [],
+            "created": "2022-01-04T14:26:39.17Z",
+            "modified": "2022-01-04T14:26:39.17Z",
+            "lineStatuses": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineStatus, Tfl.Api.Presentation.Entities",
+                    "id": 0,
+                    "statusSeverity": 10,
+                    "statusSeverityDescription": "Good Service",
+                    "created": "0001-01-01T00:00:00",
+                    "validityPeriods": []
+                }
+            ],
+            "routeSections": [],
+            "serviceTypes": [
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
+                    "name": "Regular",
+                    "uri": "/Line/Route?ids=Piccadilly&serviceTypes=Regular"
+                },
+                {
+                    "$type": "Tfl.Api.Presentation.Entities.LineServiceTypeInfo, Tfl.Api.Presentation.Entities",
+                    "name": "Night",
+                    "uri": "/Line/Route?ids=Piccadilly&serviceTypes=Night"
+                }
+            ],
+            "crowding": {
+                "$type": "Tfl.Api.Presentation.Entities.Crowding, Tfl.Api.Presentation.Entities"
+            }
+        }
+    ],
+    "stopMessages": [],
+    "recommendedMaxAgeMinutes": 3,
+    "searchCriteria": {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.SearchCriteria, Tfl.Api.Presentation.Entities",
+        "dateTime": "2022-01-07T09:00:00",
+        "dateTimeType": "Departing",
+        "timeAdjustments": {
+            "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustments, Tfl.Api.Presentation.Entities",
+            "earliest": {
+                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
+                "date": "20220107",
+                "time": "0300",
+                "timeIs": "departing",
+                "uri": "/journey/journeyresults/940gzzluegw/to/940gzzluact?time=0300&date=20220107&timeIs=departing"
+            },
+            "earlier": {
+                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
+                "date": "20220107",
+                "time": "0857",
+                "timeIs": "departing",
+                "uri": "/journey/journeyresults/940gzzluegw/to/940gzzluact?time=0857&date=20220107&timeIs=departing"
+            },
+            "later": {
+                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
+                "date": "20220107",
+                "time": "0903",
+                "timeIs": "departing",
+                "uri": "/journey/journeyresults/940gzzluegw/to/940gzzluact?time=0903&date=20220107&timeIs=departing"
+            },
+            "latest": {
+                "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.TimeAdjustment, Tfl.Api.Presentation.Entities",
+                "date": "20220108",
+                "time": "0300",
+                "timeIs": "departing",
+                "uri": "/journey/journeyresults/940gzzluegw/to/940gzzluact?time=0300&date=20220108&timeIs=departing"
+            }
+        }
+    },
+    "journeyVector": {
+        "$type": "Tfl.Api.Presentation.Entities.JourneyPlanner.JourneyVector, Tfl.Api.Presentation.Entities",
+        "from": "1000070",
+        "to": "1000002",
+        "via": "",
+        "uri": "/journey/journeyresults/940gzzluegw/to/940gzzluact"
+    }
+}

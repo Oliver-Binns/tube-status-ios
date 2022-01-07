@@ -1,8 +1,5 @@
 //
 //  Journey.swift
-//  
-//
-//  Created by Oliver Binns on 03/12/2021.
 //
 import Foundation
 
@@ -23,4 +20,5 @@ public struct Journey: Decodable {
         case duration, legs
     }
 }
+
 extension Journey: Identifiable { }

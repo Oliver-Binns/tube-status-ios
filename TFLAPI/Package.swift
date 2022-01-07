@@ -16,6 +16,8 @@ let package = Package(
     ],
     targets: [
         .target(name: "TFLAPI", dependencies: []),
-        .testTarget(name: "TFLAPITests", dependencies: ["TFLAPI"])
+        .testTarget(name: "TFLAPITests",
+                    dependencies: ["TFLAPI"],
+                    resources: [.process("Mocks/Data")])
     ]
 )
