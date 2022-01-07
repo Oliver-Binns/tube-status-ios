@@ -14,7 +14,7 @@ struct StationPicker: View {
 
     private let dateFormatter = RelativeDateTimeFormatter()
 
-    func string(date: Date) -> String {
+    private func string(date: Date) -> String {
         dateFormatter.localizedString(for: date, relativeTo: .init())
     }
 
