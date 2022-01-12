@@ -11,13 +11,7 @@ struct StationPicker: View {
     let title: String
     let stations: [Station]
     @Binding var id: String?
-
-    private let dateFormatter = RelativeDateTimeFormatter()
-
-    private func string(date: Date) -> String {
-        dateFormatter.localizedString(for: date, relativeTo: .init())
-    }
-
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title).font(.caption2).fontWeight(.semibold)

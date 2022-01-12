@@ -6,17 +6,19 @@
 //
 @testable import JourneyPlanner
 import SwiftUI
+@testable import TFLAPI
 import ViewInspector
 import XCTest
 
 final class StationPickerTests: XCTestCase {
     var sut: StationPicker!
+    @Binding var id: String? = nil
 
     override func setUp() {
         super.setUp()
         sut = .init(title: "Origin",
-                    stations: [],
-                    id: .constant(nil))
+                    stations: .mock,
+                    id: $id)
     }
 
     func testTitleText() throws {
@@ -26,7 +28,42 @@ final class StationPickerTests: XCTestCase {
         try XCTAssertEqual(title.attributes().fontWeight(), .semibold)
     }
 
-    func testPicker() throws {
-        _ = try sut.body.inspect().vStack().picker(1)
+    func testPickerContainsContent() throws {
+        let picker = try sut.body.inspect().vStack().picker(1)
+        let content = picker.findAll(ViewType.Text.self)
+
+        try XCTAssertEqual(content.first?.string(), "Select Station")
+
+        for station in sut.stations {
+            let text = try content
+                .first(where: { try $0.tag() as? String == station.id })
+            try XCTAssertEqual(text?.string(), station.name)
+        }
+
+        XCTAssertEqual(content.count, 12)
+    }
+
+    func testPickerUpdatesBinding() throws {
+        // GIVEN no station is selected
+        XCTAssertNil(sut.id)
+
+        // WHEN I select a station using the picker
+        let picker = try sut.body.inspect().vStack().picker(1)
+        try picker.select(value: sut.stations.first?.id)
+
+        // THEN the binding is updated
+        XCTAssertEqual(sut.id, sut.stations[0].id)
+    }
+}
+extension Station {
+    static var mock: Self {
+        Station(id: UUID().uuidString, name: UUID().uuidString, lines: [])
+    }
+}
+extension Array where Element == Station {
+    static var mock: Self {
+        (0..<10).map { _ in
+            .mock
+        }
     }
 }
