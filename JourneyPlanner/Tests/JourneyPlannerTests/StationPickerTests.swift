@@ -12,13 +12,19 @@ import XCTest
 
 final class StationPickerTests: XCTestCase {
     var sut: StationPicker!
-    @Binding var id: String? = nil
+    @Binding var id: String?
 
     override func setUp() {
         super.setUp()
         sut = .init(title: "Origin",
                     stations: .mock,
                     id: $id)
+    }
+
+    override func tearDown() {
+        sut = nil
+        id = nil
+        super.tearDown()
     }
 
     func testTitleText() throws {

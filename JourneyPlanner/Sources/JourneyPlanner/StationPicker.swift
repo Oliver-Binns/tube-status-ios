@@ -11,7 +11,7 @@ struct StationPicker: View {
     let title: String
     let stations: [Station]
     @Binding var id: String?
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(title).font(.caption2).fontWeight(.semibold)
