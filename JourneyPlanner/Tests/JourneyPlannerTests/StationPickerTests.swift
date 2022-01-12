@@ -27,6 +27,6 @@ final class StationPickerTests: XCTestCase {
     }
 
     func testPicker() throws {
-        let _ = try sut.body.inspect().vStack().picker(1)
+        _ = try sut.body.inspect().vStack().picker(1)
     }
 }
