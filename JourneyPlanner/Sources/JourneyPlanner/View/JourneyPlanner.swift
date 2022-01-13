@@ -9,7 +9,7 @@ import SwiftUI
 import TFLAPI
 
 public struct JourneyPlanner: View {
-    @State private var cancellables: [AnyCancellable] = []
+    @State var cancellables: [AnyCancellable] = []
     @State private var stations: [Station]?
 
     @State private var originID: String?
@@ -18,11 +18,11 @@ public struct JourneyPlanner: View {
     @State private var isLoading: Bool = false
     @State private var journeys: [Journey]?
 
-    private let stationService: StationService
-    private let journeyService: JourneyService
+    private let stationService: StationServicing
+    private let journeyService: JourneyServicing
 
-    public init(stationService: StationService = .init(),
-                journeyService: JourneyService = .init()) {
+    public init(stationService: StationServicing = StationService(),
+                journeyService: JourneyServicing = JourneyService()) {
         self.stationService = stationService
         self.journeyService = journeyService
     }
@@ -58,19 +58,25 @@ public struct JourneyPlanner: View {
             } else {
                 ProgressView()
             }
-        }.onAppear {
-            guard stations == nil else { return }
-            stationService.getAllStations()
-                .receive(on: DispatchQueue.main)
-                .sink(receiveCompletion: { error in
+        }
+        .onAppear(perform: fetchStations)
+        .pickerStyle(.menu)
+    }
+
+    private func fetchStations() {
+        guard stations == nil else { return }
+        stationService
+            .getAllStations()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { error in
                 print(error)
             }, receiveValue: { stations in
                 self.stations = stations
-            }).store(in: &cancellables)
-        }.pickerStyle(.menu)
+            })
+            .store(in: &cancellables)
     }
 
-    func fetchJourney() {
+    private func fetchJourney() {
         guard let originID = originID,
             let destinationID = destinationID else {
             return

@@ -1,9 +1,3 @@
-//
-//  JourneyPlannerTests.swift
-//  
-//
-//  Created by Oliver Binns on 10/11/2021.
-//
 @testable import JourneyPlanner
 import SwiftUI
 @testable import TFLAPI
