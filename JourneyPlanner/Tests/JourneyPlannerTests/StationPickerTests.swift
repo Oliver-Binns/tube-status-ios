@@ -12,7 +12,8 @@ import XCTest
 
 final class StationPickerTests: XCTestCase {
     var sut: StationPicker!
-    @Binding var id: String?
+    // swiftlint:disable:next redundant_optional_initialization
+    @Binding var id: String? = nil
 
     override func setUp() {
         super.setUp()
