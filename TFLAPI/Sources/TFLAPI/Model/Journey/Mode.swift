@@ -10,4 +10,7 @@ public enum Mode: String, Decodable {
     case walking
     case tube
     case overground
+    case bus
+    case nationalRail = "national-rail"
+    case crossrail = "elizabeth-line"
 }

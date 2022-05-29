@@ -14,7 +14,8 @@ public struct Leg: Decodable {
     public let destination: String
 
     public let mode: Mode
-    public let line: Line?
+
+    public let lineName: String?
 
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
@@ -34,10 +35,10 @@ public struct Leg: Decodable {
             .decode(Mode.self, forKey: .name)
 
         var routeOptions = try values.nestedUnkeyedContainer(forKey: .routeOptions)
-        line = try routeOptions
+        lineName = try? routeOptions
             .nestedContainer(keyedBy: CodingKeys.self)
             .nestedContainer(keyedBy: CodingKeys.self, forKey: .lineIdentifier)
-            .decode(Line.self, forKey: .name)
+            .decode(String.self, forKey: .name)
     }
 
     enum CodingKeys: String, CodingKey {
