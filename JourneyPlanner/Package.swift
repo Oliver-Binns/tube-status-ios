@@ -15,13 +15,14 @@ let package = Package(
         .library(name: "JourneyPlanner", targets: ["JourneyPlanner"])
     ],
     dependencies: [
+        .package(name: "BaseUI", path: "../BaseUI"),
         .package(name: "TFLAPI", path: "../TFLAPI"),
         .package(name: "ViewInspector",
                  url: "https://github.com/nalexn/ViewInspector.git",
                  .upToNextMajor(from: "0.9.1"))
     ],
     targets: [
-        .target(name: "JourneyPlanner", dependencies: ["TFLAPI"]),
+        .target(name: "JourneyPlanner", dependencies: ["BaseUI", "TFLAPI"]),
 
         .testTarget(name: "JourneyPlannerTests",
                     dependencies: ["JourneyPlanner", "ViewInspector"])
