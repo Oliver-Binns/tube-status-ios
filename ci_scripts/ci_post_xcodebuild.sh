@@ -9,7 +9,7 @@ then
     xcodebuild \
       -workspace "$CI_WORKSPACE/$CI_XCODE_PROJECT" \
       -scheme "iOS Production" \
-      -destination 'platform=iOS Simulator,name=iPhone 13' \
+      -destination 'platform=iOS Simulator,name=iPhone 11' \
       -enableCodeCoverage YES \
       -resultBundlePath $CI_RESULT_BUNDLE_PATH \
       test-without-building
