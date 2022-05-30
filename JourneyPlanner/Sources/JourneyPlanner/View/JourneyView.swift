@@ -37,7 +37,6 @@ struct JourneyView: View {
                     Text(origin)
                 }
 
-
                 ForEach(journey.legs) { leg in
                     HStack {
                         HStack {
