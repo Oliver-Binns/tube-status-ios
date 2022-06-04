@@ -29,7 +29,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "077FB3C524B465DC00AAB327"
-               BuildableName = "watchOS.app"
+               BuildableName = "Tube Status.app"
                BlueprintName = "watchOS"
                ReferencedContainer = "container:TubeStatus.xcodeproj">
             </BuildableReference>

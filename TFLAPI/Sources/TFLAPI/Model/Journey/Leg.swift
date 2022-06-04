@@ -41,6 +41,18 @@ public struct Leg: Decodable {
             .decode(String.self, forKey: .name)
     }
 
+    public init(duration: Int,
+                origin: String,
+                destination: String,
+                mode: Mode,
+                lineName: String?) {
+        self.duration = duration
+        self.origin = origin
+        self.destination = destination
+        self.mode = mode
+        self.lineName = lineName
+    }
+
     enum CodingKeys: String, CodingKey {
         case duration
         case departurePoint, arrivalPoint

@@ -53,7 +53,7 @@ struct JourneyView: View {
                             if let lineName = leg.lineName {
                                 Text(lineName).fontWeight(.semibold)
                             }
-                        }.foregroundColor(leg.colour ?? .primary)
+                        }.foregroundColor(leg.color ?? .primary)
                         Text("\(leg.duration) min")
                     }
                     Text(leg.destination)
@@ -64,7 +64,7 @@ struct JourneyView: View {
 }
 
 extension Leg {
-    var colour: Color? {
+    var color: Color? {
         switch mode {
         case .bus:
             return .red
