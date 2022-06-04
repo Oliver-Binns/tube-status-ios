@@ -42,8 +42,8 @@ public struct JourneyPlanner: View {
                             fetchJourney()
                         } label: {
                             HStack {
-                                Image(systemName: "tram.fill")
                                 Text("Plan")
+                                Image(systemName: "arrow.up.right")
                             }
                         }.disabled(originID == nil || destinationID == nil || isLoading)
                     }
