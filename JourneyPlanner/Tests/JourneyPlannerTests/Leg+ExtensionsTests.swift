@@ -8,7 +8,7 @@ import TFLAPI
 import XCTest
 @testable import JourneyPlanner
 
-final class Leg_ExtensionsTests: XCTestCase {
+final class LegExtensionsTests: XCTestCase {
     func test_colour() {
         XCTAssertEqual(Leg(mode: .crossrail).color, .crossrail)
         XCTAssertEqual(Leg(mode: .bus).color, .red)
