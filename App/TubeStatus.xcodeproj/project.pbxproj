@@ -166,7 +166,7 @@
 		076CCB3B24BA0EC400770D9D /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		076CCB3F24BA13CD00770D9D /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		077FB3BF24B4636000AAB327 /* Shared.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Shared.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		077FB3C624B465DC00AAB327 /* watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		077FB3C624B465DC00AAB327 /* Tube Status.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tube Status.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		077FB3C924B465DC00AAB327 /* watchOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "watchOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		077FB3CE24B465DE00AAB327 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		077FB3D024B465DE00AAB327 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -321,7 +321,7 @@
 			children = (
 				7C18738F24A3A45E009CCECC /* iOS.app */,
 				7C18741124A3A858009CCECC /* iOS-Widget.appex */,
-				077FB3C624B465DC00AAB327 /* watchOS.app */,
+				077FB3C624B465DC00AAB327 /* Tube Status.app */,
 				077FB3C924B465DC00AAB327 /* watchOS WatchKit App.app */,
 				077FB3D524B465DE00AAB327 /* watchOS WatchKit Extension.appex */,
 				077FB3FB24B4679500AAB327 /* tvOS.app */,
@@ -389,7 +389,7 @@
 			);
 			name = watchOS;
 			productName = watchOS;
-			productReference = 077FB3C624B465DC00AAB327 /* watchOS.app */;
+			productReference = 077FB3C624B465DC00AAB327 /* Tube Status.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		077FB3C824B465DC00AAB327 /* watchOS WatchKit App */ = {
@@ -840,7 +840,7 @@
 				DEVELOPMENT_TEAM = Z86DH46P79;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oliverbinns.tubestatus.watchOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tube Status";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Beta;
@@ -1052,7 +1052,7 @@
 				DEVELOPMENT_TEAM = Z86DH46P79;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oliverbinns.tubestatus.watchOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tube Status";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Alpha;
@@ -1264,7 +1264,7 @@
 				DEVELOPMENT_TEAM = Z86DH46P79;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oliverbinns.tubestatus.watchOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tube Status";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -1419,7 +1419,7 @@
 				DEVELOPMENT_TEAM = Z86DH46P79;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.oliverbinns.tubestatus.watchOS;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tube Status";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;

@@ -1,6 +1,7 @@
 {
   "images" : [
     {
+      "filename" : "Tube Status update_24pt@2x.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -8,6 +9,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "Tube Status update_27pt@2x.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -15,18 +17,21 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "Tube Status update_29pt@2x.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "Tube Status update_29pt@3x.png",
       "idiom" : "watch",
       "role" : "companionSettings",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
+      "filename" : "66.png",
       "idiom" : "watch",
       "role" : "notificationCenter",
       "scale" : "2x",
@@ -50,6 +55,7 @@
       "subtype" : "40mm"
     },
     {
+      "filename" : "92.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -57,6 +63,7 @@
       "subtype" : "41mm"
     },
     {
+      "filename" : "100.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -64,6 +71,7 @@
       "subtype" : "44mm"
     },
     {
+      "filename" : "102.png",
       "idiom" : "watch",
       "role" : "appLauncher",
       "scale" : "2x",
@@ -71,6 +79,7 @@
       "subtype" : "45mm"
     },
     {
+      "filename" : "Tube Status update_86pt@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -78,6 +87,7 @@
       "subtype" : "38mm"
     },
     {
+      "filename" : "Tube Status update_98pt@2x.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -85,6 +95,7 @@
       "subtype" : "42mm"
     },
     {
+      "filename" : "216.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -92,6 +103,7 @@
       "subtype" : "44mm"
     },
     {
+      "filename" : "234.png",
       "idiom" : "watch",
       "role" : "quickLook",
       "scale" : "2x",
@@ -99,7 +111,7 @@
       "subtype" : "45mm"
     },
     {
-      "filename" : "Tube Status.png",
+      "filename" : "Tube Status update.png",
       "idiom" : "watch-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
