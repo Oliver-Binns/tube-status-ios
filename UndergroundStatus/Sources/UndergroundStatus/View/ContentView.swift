@@ -11,7 +11,8 @@ struct ContentView: View {
     let updates: [LineStatusUpdate]?
     let displayReason: Bool
 
-    public init(updates: [LineStatusUpdate]?, displayReason: Bool = false) {
+    init(updates: [LineStatusUpdate]?,
+         displayReason: Bool = false) {
         self.updates = updates
         self.displayReason = displayReason
     }

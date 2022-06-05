@@ -6,6 +6,7 @@
 //
 import SwiftUI
 import UndergroundStatus
+import JourneyPlanner
 
 @main
 struct MACOSApp: App {
@@ -13,7 +14,8 @@ struct MACOSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ScrollableContentView(updates: viewModel.status)
+            ScrollView { JourneyPlanner().padding(16) }
+                .frame(minWidth: 400, minHeight: 400)
         }
     }
 }

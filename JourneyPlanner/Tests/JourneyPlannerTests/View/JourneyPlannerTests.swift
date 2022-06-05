@@ -4,22 +4,27 @@ import ViewInspector
 import XCTest
 
 final class JourneyPlannerTests: XCTestCase {
-    var sut: JourneyPlanner!
     var mockStationService: MockStationService!
     var mockJourneyService: MockJourneyService!
+
+    var viewModel: JourneyPlannerViewModel!
+    var sut: JourneyPlanner!
 
     override func setUp() {
         super.setUp()
         mockStationService = .init()
         mockJourneyService = .init()
-        sut = .init(stationService: mockStationService,
-                    journeyService: mockJourneyService)
+        viewModel = .init(stationService: mockStationService,
+                          journeyService: mockJourneyService)
+
+        sut = .init(viewModel: viewModel)
     }
 
     override func tearDown() {
         sut = nil
         mockStationService = nil
         mockJourneyService = nil
+        viewModel = nil
         super.tearDown()
     }
 
@@ -33,13 +38,13 @@ final class JourneyPlannerTests: XCTestCase {
         XCTAssertTrue(mockStationService.requestedAll)
     }
 
-    /*
-     func testDisplaysPickersForStationsOnLoad() throws {
+    func testDisplaysPickersForStationsOnLoad() throws {
         // GIVEN the Journey Planner view has appeared
         try sut.body.inspect().vStack().callOnAppear()
 
         // WHEN the list of stations is received
-        mockStationService.subject.send([.mock, .mock])
+        mockStationService.subject.send([.mock(named: "Oxford Circus"),
+                                         .mock(named: "Acton Central")])
 
         // THEN the progress view disappears
         let exp = expectation(for: .init(block: { _,_ in
@@ -48,9 +53,16 @@ final class JourneyPlannerTests: XCTestCase {
         wait(for: [exp], timeout: 3)
 
         // AND the picker view appears
-        let picker = try sut.body.inspect().vStack().form(0).section(0)
+        let pickerContainer = try sut.body.inspect().vStack().form(0).section(0)
             .find(StationPicker.self)
-    } */
+        XCTAssertNotNil(pickerContainer)
+        try XCTAssertEqual(pickerContainer.vStack().text(0).string(), "Origin")
+
+        let picker = try pickerContainer.vStack().picker(1)
+        try XCTAssertEqual(picker.text(0).string(), "Select Station")
+        try XCTAssertEqual(picker.forEach(1).text(0).string(), "Oxford Circus")
+        try XCTAssertEqual(picker.forEach(1).text(1).string(), "Acton Central")
+    }
 }
 
 extension StationPicker: Inspectable { }

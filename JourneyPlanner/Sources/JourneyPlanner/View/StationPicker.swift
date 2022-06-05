@@ -14,7 +14,9 @@ struct StationPicker: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
+            #if !os(macOS)
             Text(title).font(.caption2).fontWeight(.semibold)
+            #endif
             Picker(title, selection: $id) {
                 Text("Select Station").tag(nil as String?)
                 ForEach(stations) {

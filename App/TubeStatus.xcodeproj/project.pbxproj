@@ -26,6 +26,7 @@
 		07DD24912718092700D39A5B /* UndergroundStatus in Frameworks */ = {isa = PBXBuildFile; productRef = 07DD24902718092700D39A5B /* UndergroundStatus */; };
 		07DD24932718093000D39A5B /* UndergroundStatus in Frameworks */ = {isa = PBXBuildFile; productRef = 07DD24922718093000D39A5B /* UndergroundStatus */; };
 		07DD24952718093A00D39A5B /* UndergroundStatus in Frameworks */ = {isa = PBXBuildFile; productRef = 07DD24942718093A00D39A5B /* UndergroundStatus */; };
+		07E8D023284CC68C00FCF819 /* JourneyPlanner in Frameworks */ = {isa = PBXBuildFile; productRef = 07E8D022284CC68C00FCF819 /* JourneyPlanner */; };
 		7C09CAA024A51301000D9431 /* LineSelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7C09CA9F24A51301000D9431 /* LineSelection.intentdefinition */; };
 		7C09CAB624A524D4000D9431 /* LineSelection.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7C09CA9F24A51301000D9431 /* LineSelection.intentdefinition */; };
 		7C18739324A3A45E009CCECC /* TubeStatusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C18739224A3A45E009CCECC /* TubeStatusApp.swift */; };
@@ -233,6 +234,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07E8D023284CC68C00FCF819 /* JourneyPlanner in Frameworks */,
 				07DD248F2718091B00D39A5B /* UndergroundStatus in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +474,7 @@
 			name = macOS;
 			packageProductDependencies = (
 				07DD248E2718091B00D39A5B /* UndergroundStatus */,
+				07E8D022284CC68C00FCF819 /* JourneyPlanner */,
 			);
 			productName = macOS;
 			productReference = 07BA5C5224B8C6AA00193157 /* macOS.app */;
@@ -1706,6 +1709,10 @@
 		07DD24942718093A00D39A5B /* UndergroundStatus */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = UndergroundStatus;
+		};
+		07E8D022284CC68C00FCF819 /* JourneyPlanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = JourneyPlanner;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

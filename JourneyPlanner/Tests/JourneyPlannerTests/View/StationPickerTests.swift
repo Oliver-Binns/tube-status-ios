@@ -57,14 +57,14 @@ final class StationPickerTests: XCTestCase {
     }
 }
 extension Station {
-    static var mock: Self {
-        Station(id: UUID().uuidString, name: UUID().uuidString, lines: [])
+    static func mock(named name: String = UUID().uuidString) -> Self {
+        Station(id: UUID().uuidString, name: name, lines: [])
     }
 }
 extension Array where Element == Station {
     static var mock: Self {
         (0..<10).map { _ in
-            .mock
+            .mock()
         }
     }
 }
