@@ -9,15 +9,21 @@ import Foundation
 
 public struct JourneyService {
     private let client: NetworkClient
+    private let decoder: JSONDecoder
 
     public init(client: NetworkClient = .init()) {
         self.client = client
+        self.decoder = JSONDecoder()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        decoder.dateDecodingStrategy = .formatted(dateFormatter)
     }
 
-    public func planJourney(from origin: Station, to destination: Station) -> AnyPublisher<[Station], Error> {
+    public func planJourney(from originID: String, to destinationID: String) -> AnyPublisher<[Journey], Error> {
         client
-            .executeRequest(request: .planJourney(from: origin.id, to: destination.id))
-            .decode(type: [Station].self, decoder: JSONDecoder())
+            .executeRequest(request: .planJourney(from: originID, to: destinationID))
+            .decode(type: JourneyResponse.self, decoder: decoder)
+            .map(\.journeys)
             .eraseToAnyPublisher()
     }
 }

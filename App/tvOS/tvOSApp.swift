@@ -9,7 +9,7 @@ import UndergroundStatus
 
 @main
 struct TVOSApp: App {
-    @ObservedObject private var viewModel = StatusViewModel(client: .init())
+    @ObservedObject private var viewModel = StatusViewModel()
 
     var body: some Scene {
         WindowGroup {

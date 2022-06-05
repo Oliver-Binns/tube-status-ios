@@ -15,10 +15,10 @@ public struct ScrollableContentView: View {
     }
 
     public var body: some View {
-        GeometryReader { _ in
-            ScrollView(.vertical) {
-                ContentView(updates: updates, displayReason: true)
-            }
+        Form {
+            ContentView(updates: updates, displayReason: true)
+                .padding(.horizontal, -16)
+                .padding(.vertical, -8)
         }
     }
 }

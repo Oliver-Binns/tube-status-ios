@@ -8,4 +8,5 @@ import SwiftUI
 
 extension Color {
     public static var background = Color("Background", bundle: .module)
+    public static var crossrail = Color("Crossrail", bundle: .module)
 }
