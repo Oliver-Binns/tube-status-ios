@@ -6,7 +6,7 @@
 //
 import Foundation
 
-public struct Leg: Decodable {
+public struct Leg {
     public let id = UUID()
     public let duration: Int
 
@@ -16,7 +16,11 @@ public struct Leg: Decodable {
     public let mode: Mode
 
     public let lineName: String?
+}
 
+extension Leg: Identifiable { }
+
+extension Leg: Decodable {
     public init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         duration = try values.decode(Int.self, forKey: .duration)
@@ -41,18 +45,6 @@ public struct Leg: Decodable {
             .decode(String.self, forKey: .name)
     }
 
-    public init(duration: Int,
-                origin: String,
-                destination: String,
-                mode: Mode,
-                lineName: String?) {
-        self.duration = duration
-        self.origin = origin
-        self.destination = destination
-        self.mode = mode
-        self.lineName = lineName
-    }
-
     enum CodingKeys: String, CodingKey {
         case duration
         case departurePoint, arrivalPoint
@@ -64,5 +56,3 @@ public struct Leg: Decodable {
         case lineIdentifier
     }
 }
-
-extension Leg: Identifiable { }

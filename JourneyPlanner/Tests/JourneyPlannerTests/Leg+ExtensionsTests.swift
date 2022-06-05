@@ -4,12 +4,12 @@
 //
 //  Created by Oliver Binns on 04/06/2022.
 //
-import TFLAPI
-import XCTest
 @testable import JourneyPlanner
+@testable import TFLAPI
+import XCTest
 
 final class LegExtensionsTests: XCTestCase {
-    func test_colour() {
+    func testColour() {
         XCTAssertEqual(Leg(mode: .crossrail).color, .crossrail)
         XCTAssertEqual(Leg(mode: .bus).color, .red)
         XCTAssertEqual(Leg(mode: .overground).color, .orange)
