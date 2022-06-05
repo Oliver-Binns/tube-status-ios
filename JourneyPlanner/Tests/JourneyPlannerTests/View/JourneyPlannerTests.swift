@@ -67,7 +67,7 @@ final class JourneyPlannerTests: XCTestCase {
     func testTapButtonCallsJourneyService() throws {
         // GIVEN the Journey Planner view has appeared
         try sut.body.inspect().vStack().callOnAppear()
-        
+
         // AND the list of stations has loaded
         mockStationService.subject.send([.mock(named: "Oxford Circus"),
                                          .mock(named: "Acton Central")])
