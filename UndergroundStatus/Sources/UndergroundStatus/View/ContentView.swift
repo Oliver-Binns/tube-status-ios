@@ -10,13 +10,13 @@ import TFLAPI
 public struct ContentView: View {
     let updates: [LineStatusUpdate]?
     let displayReason: Bool
-
+    
     public init(updates: [LineStatusUpdate]?,
-         displayReason: Bool = false) {
+                displayReason: Bool = false) {
         self.updates = updates
         self.displayReason = displayReason
     }
-
+    
     public var body: some View {
         VStack(alignment: .center, spacing: 0) {
             if let updates = updates {
