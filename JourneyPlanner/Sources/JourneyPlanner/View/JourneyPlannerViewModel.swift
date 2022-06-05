@@ -30,7 +30,6 @@ public final class JourneyPlannerViewModel: ObservableObject {
         guard stations == nil else { return }
         stationService
             .getAllStations()
-            .print()
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { error in
                 print(error)
