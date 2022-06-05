@@ -47,7 +47,7 @@ final class JourneyPlannerTests: XCTestCase {
                                          .mock(named: "Acton Central")])
 
         // THEN the progress view disappears
-        let exp = expectation(for: .init(block: { _,_ in
+        let exp = expectation(for: .init(block: { _, _ in
             (try? self.sut.body.inspect().vStack().progressView(0)) == nil
         }), evaluatedWith: nil, handler: nil)
         wait(for: [exp], timeout: 3)
