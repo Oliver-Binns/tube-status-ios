@@ -1,10 +1,3 @@
-//
-//  TubeStatusApp.swift
-//  TubeStatus
-//
-//  Created by Oliver Binns on 24/06/2020.
-//
-import About
 import JourneyPlanner
 import SwiftUI
 import UndergroundStatus
@@ -23,19 +16,15 @@ struct TubeStatusApp: App {
                     Image(systemName: "tram")
                     Text("Status")
                 }
+                .navigationViewStyle(.stack)
+
                 NavigationView {
                     JourneyPlanner().navigationTitle("Journey Planner")
                 }.tabItem {
                     Image(systemName: "arrow.triangle.turn.up.right.diamond.fill")
                     Text("Journey Planner")
                 }
-                ScrollView {
-                    AboutView().readableGuidePadding()
-                }
-                    .tabItem {
-                        Image(systemName: "info.circle")
-                        Text("About")
-                    }
+                .navigationViewStyle(.stack)
             }
         }
     }

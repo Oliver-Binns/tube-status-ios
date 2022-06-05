@@ -18,7 +18,6 @@
 		077FB40224B4679500AAB327 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 077FB40124B4679500AAB327 /* Assets.xcassets */; };
 		07BA5C5524B8C6AA00193157 /* macOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BA5C5424B8C6AA00193157 /* macOSApp.swift */; };
 		07BA5C5924B8C6AA00193157 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07BA5C5824B8C6AA00193157 /* Assets.xcassets */; };
-		07DD248227176A3400D39A5B /* About in Frameworks */ = {isa = PBXBuildFile; productRef = 07DD248127176A3400D39A5B /* About */; };
 		07DD24872718067300D39A5B /* JourneyPlanner in Frameworks */ = {isa = PBXBuildFile; productRef = 07DD24862718067300D39A5B /* JourneyPlanner */; };
 		07DD24892718067E00D39A5B /* UndergroundStatus in Frameworks */ = {isa = PBXBuildFile; productRef = 07DD24882718067E00D39A5B /* UndergroundStatus */; };
 		07DD248D2718069700D39A5B /* UndergroundStatus in Frameworks */ = {isa = PBXBuildFile; productRef = 07DD248C2718069700D39A5B /* UndergroundStatus */; };
@@ -245,7 +244,6 @@
 			files = (
 				07DD24872718067300D39A5B /* JourneyPlanner in Frameworks */,
 				07DD24892718067E00D39A5B /* UndergroundStatus in Frameworks */,
-				07DD248227176A3400D39A5B /* About in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +497,6 @@
 			);
 			name = iOS;
 			packageProductDependencies = (
-				07DD248127176A3400D39A5B /* About */,
 				07DD24862718067300D39A5B /* JourneyPlanner */,
 				07DD24882718067E00D39A5B /* UndergroundStatus */,
 			);
@@ -1678,10 +1675,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		07DD248127176A3400D39A5B /* About */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = About;
-		};
 		07DD24862718067300D39A5B /* JourneyPlanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = JourneyPlanner;
