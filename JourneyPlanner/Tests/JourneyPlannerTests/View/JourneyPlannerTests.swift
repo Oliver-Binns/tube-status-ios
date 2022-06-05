@@ -63,6 +63,30 @@ final class JourneyPlannerTests: XCTestCase {
         try XCTAssertEqual(picker.forEach(1).text(0).string(), "Oxford Circus")
         try XCTAssertEqual(picker.forEach(1).text(1).string(), "Acton Central")
     }
+
+    func testTapButtonCallsJourneyService() throws {
+        // GIVEN the Journey Planner view has appeared
+        try sut.body.inspect().vStack().callOnAppear()
+        
+        // AND the list of stations has loaded
+        mockStationService.subject.send([.mock(named: "Oxford Circus"),
+                                         .mock(named: "Acton Central")])
+
+        wait(for: [expectation(for: .init { _, _ in
+            (try? self.sut.body.inspect().vStack().progressView(0)) == nil
+        }, evaluatedWith: nil, handler: nil)], timeout: 3)
+
+        // AND I have selected an origin and destination
+        viewModel.originID = UUID().uuidString
+        viewModel.destinationID = UUID().uuidString
+
+        // WHEN I tap the "Plan Journey" button
+        try sut.body.inspect().find(button: "Plan").tap()
+
+        // THEN the Journey Service is called
+        XCTAssertEqual(mockJourneyService.request?.originID, viewModel.originID)
+        XCTAssertEqual(mockJourneyService.request?.destinationID, viewModel.destinationID)
+    }
 }
 
 extension StationPicker: Inspectable { }
