@@ -7,17 +7,17 @@
 import SwiftUI
 import TFLAPI
 
-struct ContentView: View {
+public struct ContentView: View {
     let updates: [LineStatusUpdate]?
     let displayReason: Bool
-
-    init(updates: [LineStatusUpdate]?,
-         displayReason: Bool = false) {
+    
+    public init(updates: [LineStatusUpdate]?,
+                displayReason: Bool = false) {
         self.updates = updates
         self.displayReason = displayReason
     }
-
-    var body: some View {
+    
+    public var body: some View {
         VStack(alignment: .center, spacing: 0) {
             if let updates = updates {
                 ForEach(updates) { update in

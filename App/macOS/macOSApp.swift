@@ -14,8 +14,17 @@ struct MACOSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ScrollView { JourneyPlanner().padding(16) }
-                .frame(minWidth: 400, minHeight: 400)
+            TabView {
+                ScrollView {
+                    ContentView(updates: viewModel.status, displayReason: true)
+                }.tabItem { Text("Status") }
+
+                ScrollView { JourneyPlanner().padding(16) }
+                    .frame(minWidth: 400, minHeight: 400)
+                    .tabItem { Text("Journey Planner") }
+            }
+            .padding(.top, 16)
+            .navigationTitle("Tube Status")
         }
     }
 }
